@@ -1,0 +1,17 @@
+
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env
+.env.*
+!.env.example
+
+# Model and dataset caches
+.cache/
+hf_cache/
+*.safetensors
+*.bin
+
+# Keep experiment outputs and datasets in Git for now.
+# We will review large files before committing.
