@@ -1,0 +1,33 @@
+
+{
+  "dataset": "hotpotqa",
+  "questions_path": "data/splits/hotpotqa_100_questions.json",
+  "corpus_path": "data/processed/hotpotqa_100_corpus.json",
+  "output_path": "data/processed/parameter_validation_pilot_v2.csv",
+
+  "question_limit": 2,
+
+  "rag_config": {
+    "config_id": "parameter_validation_001",
+    "chunk_size": 256,
+    "chunk_overlap": 32,
+    "retriever": "dense",
+    "top_k": 5,
+    "retrieval_k": 20,
+    "similarity_threshold": 0.50,
+    "context_budget": 1024,
+    "reranker": false
+  },
+
+  "llm": {
+    "model": "qwen/qwen3.8-27b",
+    "temperature": 0,
+    "max_completion_tokens": 256,
+    "seed": 42
+  },
+
+  "experiment": {
+    "run_id": "parameter_validation_001",
+    "random_seed": 42
+  }
+}

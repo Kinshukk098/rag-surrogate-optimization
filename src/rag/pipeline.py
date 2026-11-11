@@ -17,7 +17,9 @@ class RAGPipeline:
             "chunk_overlap",
             "retriever",
             "top_k",
-            "reranker"
+            "reranker",
+            "similarity_threshold",
+            "context_budget"
         ]
 
         for key in required_keys:
@@ -27,19 +29,20 @@ class RAGPipeline:
         if config["chunk_size"] <= 0:
             raise ValueError("chunk_size must be positive")
 
-        if config["chunk_overlap"] < 0:
-            raise ValueError("chunk_overlap cannot be negative")
-
-        if config["chunk_overlap"] >= config["chunk_size"]:
-            raise ValueError(
-                "chunk_overlap must be smaller than chunk_size"
-            )
+        if not 0 <= config["chunk_overlap"] < config["chunk_size"]:
+            raise ValueError("Invalid chunk_overlap")
 
         if config["top_k"] <= 0:
             raise ValueError("top_k must be positive")
 
         if config["retriever"] not in ["bm25", "dense"]:
             raise ValueError("Retriever must be 'bm25' or 'dense'")
+
+        if not 0.0 <= config["similarity_threshold"] <= 1.0:
+            raise ValueError("similarity_threshold must be between 0 and 1")
+
+        if config["context_budget"] <= 0:
+            raise ValueError("context_budget must be positive")
 
         self.use_reranker = config["reranker"]
 
@@ -68,25 +71,85 @@ class RAGPipeline:
         if self.use_reranker:
             self.reranker = CrossEncoderReranker()
 
+        self.last_retrieval_stats = {}
+
         print("RAG pipeline initialized successfully.")
+
+    def normalize_scores(self, candidates):
+
+        if not candidates:
+            return []
+
+        scores = [float(doc["score"]) for doc in candidates]
+
+        if self.config["retriever"] == "dense":
+            # Dense scores are cosine similarities in [-1, 1].
+            normalized = [
+                max(0.0, min(1.0, (score + 1.0) / 2.0))
+                for score in scores
+            ]
+
+        else:
+            # BM25 scores are normalized within this query's
+            # retrieved candidate set.
+            min_score = min(scores)
+            max_score = max(scores)
+
+            if max_score - min_score < 1e-12:
+                normalized = [1.0] * len(scores)
+            else:
+                normalized = [
+                    (score - min_score) / (max_score - min_score)
+                    for score in scores
+                ]
+
+        results = []
+
+        for document, raw_score, norm_score in zip(
+            candidates, scores, normalized
+        ):
+            result = document.copy()
+            result["raw_retrieval_score"] = raw_score
+            result["normalized_retrieval_score"] = norm_score
+            results.append(result)
+
+        return results
 
     def retrieve(self, question):
 
-        if self.use_reranker:
-            retrieval_k = self.config.get("retrieval_k", 20)
-        else:
-            retrieval_k = self.config["top_k"]
+        retrieval_k = self.config.get(
+            "retrieval_k",
+            max(20, self.config["top_k"])
+        )
 
         candidates = self.retriever.retrieve(
             question,
             top_k=retrieval_k
         )
 
+        scored_candidates = self.normalize_scores(candidates)
+
+        threshold = self.config["similarity_threshold"]
+
+        filtered_candidates = [
+            doc for doc in scored_candidates
+            if doc["normalized_retrieval_score"] >= threshold
+        ]
+
         if self.reranker is not None:
-            return self.reranker.rerank(
+            retrieved_documents = self.reranker.rerank(
                 question,
-                candidates,
+                filtered_candidates,
                 top_k=self.config["top_k"]
             )
+        else:
+            retrieved_documents = filtered_candidates[:self.config["top_k"]]
 
-        return candidates[:self.config["top_k"]]
+        self.last_retrieval_stats = {
+            "candidate_count": len(candidates),
+            "filtered_count": len(filtered_candidates),
+            "returned_count": len(retrieved_documents),
+            "similarity_threshold": threshold
+        }
+
+        return retrieved_documents
