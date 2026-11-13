@@ -21,7 +21,7 @@ INPUT_PATH = Path(
 )
 
 OUTPUT_DIR = Path(
-    "data/configurations/selected_balanced"
+    "data/configurations/selected_balanced_v2"
 )
 
 PARAMETERS = [
@@ -38,7 +38,7 @@ LEVELS = {
     "chunk_size": [128, 256, 384, 512, 768],
     "chunk_overlap": [0, 32, 64, 96],
     "top_k": [1, 3, 5, 7, 10],
-    "similarity_threshold": [0.20, 0.35, 0.50, 0.65, 0.80, 0.90],
+    "similarity_threshold": [0.00, 0.05, 0.10, 0.15, 0.20, 0.35],
     "context_budget": [256, 512, 1024, 2048, 4096],
     "retriever": ["bm25", "dense"],
     "reranker": [False, True],

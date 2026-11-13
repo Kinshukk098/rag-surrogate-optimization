@@ -1,16 +1,12 @@
 
-import os
 import time
 
-from dotenv import load_dotenv
-from groq import Groq
+from openai import OpenAI
 
 from src.rag.chunking import tokenizer
 
 
-load_dotenv()
-
-MODEL_NAME = "qwen/qwen3.8-27b"
+MODEL_NAME = "qwen2.5:3b"
 
 
 class GroqAnswerGenerator:
@@ -22,12 +18,14 @@ class GroqAnswerGenerator:
         max_completion_tokens=256,
         seed=42
     ):
-        api_key = os.getenv("GROQ_API_KEY")
+        # Ollama's local OpenAI-compatible API.
+        # The API key is a placeholder; no real key is required.
+        self.client = OpenAI(
+            base_url="http://localhost:11434/v1",
+            api_key="ollama",
+            timeout=300.0
+        )
 
-        if not api_key:
-            raise ValueError("GROQ_API_KEY not found in .env")
-
-        self.client = Groq(api_key=api_key)
         self.model_name = model_name
         self.temperature = temperature
         self.max_completion_tokens = max_completion_tokens
@@ -63,11 +61,12 @@ class GroqAnswerGenerator:
             if not text_ids:
                 continue
 
-            # Find the largest text prefix that keeps the COMPLETE
-            # assembled context within the configured token budget.
-            low = 0
+            current_context = "\n\n".join(selected_blocks)
+            separator = "\n\n" if selected_blocks else ""
+
+            low = 1
             high = len(text_ids)
-            best_block = None
+            best_text = ""
 
             while low <= high:
 
@@ -79,10 +78,11 @@ class GroqAnswerGenerator:
                     clean_up_tokenization_spaces=True
                 )
 
-                candidate_block = prefix + selected_text
-
-                candidate_context = "\n\n".join(
-                    selected_blocks + [candidate_block]
+                candidate_context = (
+                    current_context
+                    + separator
+                    + prefix
+                    + selected_text
                 )
 
                 candidate_tokens = len(
@@ -93,38 +93,18 @@ class GroqAnswerGenerator:
                 )
 
                 if candidate_tokens <= context_budget:
-                    best_block = candidate_block
+                    best_text = selected_text
                     low = mid + 1
                 else:
                     high = mid - 1
 
-            if best_block is None:
-                break
+            if not best_text:
+                continue
 
-            selected_blocks.append(best_block)
+            selected_block = prefix + best_text
+
+            selected_blocks.append(selected_block)
             selected_titles.append(title)
-
-            final_context = "\n\n".join(selected_blocks)
-
-            final_token_count = len(
-                tokenizer.encode(
-                    final_context,
-                    add_special_tokens=False
-                )
-            )
-
-            if final_token_count >= context_budget:
-                break
-
-            # If this document was truncated, later documents
-            # cannot be added without changing the intended order.
-            selected_text_ids = tokenizer.encode(
-                best_block[len(prefix):],
-                add_special_tokens=False
-            )
-
-            if len(selected_text_ids) < len(text_ids):
-                break
 
         context = "\n\n".join(selected_blocks)
 
@@ -147,7 +127,6 @@ class GroqAnswerGenerator:
         if not documents:
             raise ValueError("No retrieved documents provided.")
 
-        # 1. Measure context construction separately.
         context_start_time = time.perf_counter()
 
         (
@@ -169,7 +148,6 @@ class GroqAnswerGenerator:
                 "No context fits within the configured budget."
             )
 
-        # 2. Prepare the LLM messages.
         messages = [
             {
                 "role": "system",
@@ -195,14 +173,13 @@ class GroqAnswerGenerator:
             }
         ]
 
-        # 3. Measure Groq API generation latency.
         start_time = time.perf_counter()
 
         response = self.client.chat.completions.create(
             model=self.model_name,
             messages=messages,
             temperature=self.temperature,
-            max_completion_tokens=self.max_completion_tokens,
+            max_tokens=self.max_completion_tokens,
             seed=self.seed
         )
 
@@ -210,14 +187,19 @@ class GroqAnswerGenerator:
 
         usage = response.usage
 
-        # 4. Return answer and experiment measurements.
+        input_tokens = usage.prompt_tokens if usage else 0
+        output_tokens = usage.completion_tokens if usage else 0
+        total_tokens = usage.total_tokens if usage else (
+            input_tokens + output_tokens
+        )
+
         return {
             "answer": response.choices[0].message.content or "",
             "model": self.model_name,
 
-            "input_tokens": usage.prompt_tokens,
-            "output_tokens": usage.completion_tokens,
-            "total_tokens": usage.total_tokens,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "total_tokens": total_tokens,
 
             "context_tokens": context_tokens,
             "context_documents_used": documents_used,
