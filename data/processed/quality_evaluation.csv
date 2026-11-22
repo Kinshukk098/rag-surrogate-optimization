@@ -1,0 +1,26 @@
+"run_id","question_id","question","gold_answer","predicted_answer","answer_em","answer_f1","semantic_similarity","context_sufficiency","answer_support","abstention_appropriate","faithfulness_score","faithfulness_reason","judge_raw_response","llm_judge_model","embedding_model"
+"hotpotqa_pilot_dense_no_reranker","1","In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?","1755","1755","1.0","1.0","1.0","sufficient","supported","","1.0","Context 1 identifies the university as Moscow State University; Context 5 states it was founded in 1755.","{
+    ""context_sufficiency"": ""sufficient"",
+    ""answer_support"": ""supported"",
+    ""reason"": ""Context 1 identifies the university as Moscow State University; Context 5 states it was founded in 1755.""
+}","qwen/qwen3.8-27b","sentence-transformers/all-MiniLM-L6-v2"
+"hotpotqa_pilot_dense_no_reranker","2","Black Book starred the actress and writer of what heritage?","Dutch","Insufficient information","0.0","0.0","0.09708313643932343","insufficient","not_applicable","True","1.0","Contexts identify the actress but do not state her heritage.","{
+    ""context_sufficiency"": ""insufficient"",
+    ""answer_support"": ""not_applicable"",
+    ""reason"": ""Contexts identify the actress but do not state her heritage.""
+}","qwen/qwen3.8-27b","sentence-transformers/all-MiniLM-L6-v2"
+"hotpotqa_pilot_dense_no_reranker","3","Which actor does American Beauty and American Beauty have in common?","Kevin Spacey","Insufficient information","0.0","0.0","0.08812779188156128","insufficient","not_applicable","True","1.0","Contexts list different casts for each film; no common actor is identified in the provided text.","{
+    ""context_sufficiency"": ""insufficient"",
+    ""answer_support"": ""not_applicable"",
+    ""reason"": ""Contexts list different casts for each film; no common actor is identified in the provided text.""
+}","qwen/qwen3.8-27b","sentence-transformers/all-MiniLM-L6-v2"
+"hotpotqa_pilot_dense_no_reranker","4","Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?","40 members","Insufficient information","0.0","0.0","0.14120058715343475","insufficient","not_applicable","True","1.0","Contexts identify the Florida Senate but do not state its number of members.","{
+    ""context_sufficiency"": ""insufficient"",
+    ""answer_support"": ""not_applicable"",
+    ""reason"": ""Contexts identify the Florida Senate but do not state its number of members.""
+}","qwen/qwen3.8-27b","sentence-transformers/all-MiniLM-L6-v2"
+"hotpotqa_pilot_dense_no_reranker","5","Between Greyia and Calibanus, which genus contains more species?","Greyia","Calibanus","0.0","0.0","0.3312755525112152","sufficient","supported","","1.0","Context 1 states Greyia has three species; Context 2 states Calibanus has two. Greyia has more.","{
+    ""context_sufficiency"": ""sufficient"",
+    ""answer_support"": ""supported"",
+    ""reason"": ""Context 1 states Greyia has three species; Context 2 states Calibanus has two. Greyia has more.""
+}","qwen/qwen3.8-27b","sentence-transformers/all-MiniLM-L6-v2"

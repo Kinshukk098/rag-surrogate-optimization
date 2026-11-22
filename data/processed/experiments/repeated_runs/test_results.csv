@@ -1,0 +1,79 @@
+run_id,dataset,split,config_id,question_id,question,chunk_size,chunk_overlap,top_k,retrieval_k,similarity_threshold,context_budget,retriever,reranker,candidate_count,filtered_count,returned_count,context_documents_used,context_tokens,llm_model,answer_em,answer_f1,supporting_title_recall,supporting_context_title_recall,retrieval_pipeline_latency_seconds,context_construction_latency_seconds,generation_latency_seconds,total_latency_seconds,input_tokens,output_tokens,total_tokens,gold_answer,predicted_answer,retrieved_titles,context_document_titles,actual_context,repeat_id
+rag_surrogate_v2_hotpotqa_config_00538_repeat_1,hotpotqa,repeated,config_00538,1,In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?,128,0,10,20,0.1,4096,bm25,True,20,11,10,10,1049,qwen2.5:3b,0.0,0.0,0.5,0.5,0.4551788999233395,0.10861300001852214,6.575063000083901,7.138854900025763,1358,5,1363,1755,Insufficient information.,"[""Sergei Aleksandrovich Tokarev"", ""Sergei Aleksandrovich Kudryavtsev"", ""Sergei Sholokhov"", ""Sergei Dmitrochenko"", ""Sergei Panchin"", ""Sergei Kornilenko"", ""Time and Eternity (philosophy book)"", ""Graham Schweig"", ""Smadar Lavie"", ""Trish Lake""]","[""Sergei Aleksandrovich Tokarev"", ""Sergei Aleksandrovich Kudryavtsev"", ""Sergei Sholokhov"", ""Sergei Dmitrochenko"", ""Sergei Panchin"", ""Sergei Kornilenko"", ""Time and Eternity (philosophy book)"", ""Graham Schweig"", ""Smadar Lavie"", ""Trish Lake""]","Document 1
+Title: Sergei Aleksandrovich Tokarev
+Content: sergei aleksandrovich tokarev ( russian : сергеи александрович токарев, 29 december 1899 – 19 april 1985 ) was a russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at moscow state university.
+
+Document 2
+Title: Sergei Aleksandrovich Kudryavtsev
+Content: sergei aleksandrovich kudryavtsev ( 1903 – april 25, 1938 ) was a ukrainian communist soviet politician. he was born in kharkiv. during the great purge, he was arrested on october 13, 1937 and later executed by firing squad. after the death of joseph stalin, he was rehabilitated in 1956.
+
+Document 3
+Title: Sergei Sholokhov
+Content: sergei aleksandrovich sholokhov ( russian : сергеи александрович шолохов ; born september 6, 1980 ) is a russian professional football player. as of august 2009, he plays in the russian second division for fc avangard kursk. before 2004 he was known as sergei kocherga ( russian : сергеи кочерга ).
+
+Document 4
+Title: Sergei Dmitrochenko
+Content: sergei aleksandrovich dmitrochenko ( russian : сергеи александрович дмитроченко ; born june 21, 1993 ) is a russian football midfielder.
+
+Document 5
+Title: Sergei Panchin
+Content: sergei aleksandrovich panchin ( russian : сергеи александрович панчин ; born 15 december 1993 ) is a russian football goalkeeper.
+
+Document 6
+Title: Sergei Kornilenko
+Content: sergei aleksandrovich kornilenko ( belarusian : сяргеи аляксандравіч карніленка ; russian : сергеи александрович корниленко ; born 14 june 1983 ) is a belarusian professional footballer who plays as a striker for fc krylia sovetov samara of the russian premier league. in belarus, both belarusian and russian languages are official. thus his name, usually transliterated as sergei kornilenko ( russian : серг
+
+Document 7
+Title: Time and Eternity (philosophy book)
+Content: time and eternity - an essay on the philosophy of religion ( 1st imp. princeton new jersey 1952, princeton university press, 169 pp ) is a philosophy book written by walter terence stace. at the time of writing, stace was a professor of philosophy at princeton university, where he had worked since 1932 after a 22 - year career in the ceylon civil service. "" time and eternity "" was one of his first books about the philosophy of religion and mysticism, after writing throughout most of the 1930s and 1940s that was influenced by phenomenalist philosophy.
+
+Document 8
+Title: Graham Schweig
+Content: graham m. schweig ( born august 2nd, 1953 in manhattan, new york ) is professor of religion and, director of studies in religion, and former inaugural director of the asian studies program at christopher newport university. he is also distinguished teaching and research fellow at the mira and ajay shingal center for dharma studies of the graduate theological union in berkeley. schweig did his graduate studies at the university of chicago and harvard university and earned his doctorate in comparative religion from harvard university and was a resident fellow of the center for the study of world religions at harvard. schweig was lecturer at duke university and later visiting associate professor of
+
+Document 9
+Title: Smadar Lavie
+Content: smadar lavie ( hebrew : סמדר לביא ) is a mizrahi u. s. - israeli anthropologist, author, and activist. she specializes in the anthropology of egypt, israel and palestine, emphasizing issues of race, gender and religion. lavie is a scholar in residence at the beatrice bain research group of the university of california, berkeley ’ s department of gender and women ’ s studies ( 2012 - 2016 ), and a visiting professor at the, university college cork ( 2011 – 16 ). lavie received her doctorate in anthropology from the university of california at berkeley ( 1989 ) and spent
+
+Document 10
+Title: Trish Lake
+Content: trish lake is an australian producer of feature films and documentaries and former abc tv journalist. among her works are "" gettin'square "" ( 2003 ) "", the burning season "" ( 2008 ) and "" frackman "" ( 2015 ). she is the ceo of freshwater pictures, based in brisbane, queensland, which she founded in 2001. lake was national president of the screen producer ’ s association of australia – spaa from 2005 - 2008 and is a former recipient of the spaa feature film producer of the year award. lake is an adjunct fellow at griffith university, brisbane where she leads a mentoring program for emerging producers at the griffith",repeat_1
+rag_surrogate_v2_hotpotqa_config_00538_repeat_1,hotpotqa,repeated,config_00538,2,Black Book starred the actress and writer of what heritage?,128,0,10,20,0.1,4096,bm25,True,20,15,10,10,1094,qwen2.5:3b,1.0,1.0,0.5,0.5,0.030186800053343177,0.11271559994202107,0.6233068999135867,0.7662092999089509,1349,3,1352,Dutch,Dutch,"[""Black Book (novel)"", ""Black Book (World War II)"", ""Halina Reijn"", ""Black Book (non-standard disc format)"", ""Books of Clanranald"", ""The Wild Pony"", ""Black Book of the Admiralty"", ""Le Livre noir du capitalisme"", ""Joanna Russ"", ""Susanna Thompson""]","[""Black Book (novel)"", ""Black Book (World War II)"", ""Halina Reijn"", ""Black Book (non-standard disc format)"", ""Books of Clanranald"", ""The Wild Pony"", ""Black Book of the Admiralty"", ""Le Livre noir du capitalisme"", ""Joanna Russ"", ""Susanna Thompson""]","Document 1
+Title: Black Book (novel)
+Content: black book ( dutch : zwartboek ) is a dutch - language 2006 thriller novel by laurens abbink spaink. it is the novelization of the dutch film "" black book "" ( 2006 ). it tells the story of a young jewish woman, rachel stein, and her struggle for survival during and after the second world war. the book has a photo section, and an afterword by paul verhoeven and gerard soeteman.
+
+Document 2
+Title: Black Book (World War II)
+Content: the black book : the ruthless murder of jews by german - fascist invaders throughout the temporarily - occupied regions of the soviet union and in the german nazi death camps established on occupied polish soil during the war 1941 – 1945 alternatively the black book of the holocaust, or simply the black book ( russian : черная книга, "" chornaya kniga "" ; yiddish : דאס שווארצע בוך, "" dos shvartse bukh "" ), was a result of the collaborative effort by the jewish anti - fascist committee ( jac ) and members of the american jewish
+
+Document 3
+Title: Halina Reijn
+Content: halina reijn ( born 10 november 1975 ) is a dutch actress and writer.
+
+Document 4
+Title: Black Book (non-standard disc format)
+Content: black book is an unofficial designation of optical disc ( od ) formats that defy official standards for cd, dvd, hd dvd and blu - ray discs. most formats considered black book are formats used for video games or digital rights management.
+
+Document 5
+Title: Books of Clanranald
+Content: the books of clanranald are two paper manuscripts that date to about the early 18th century. the books are written in classical gaelic, and are best known for their traditional account of the history of clan donald. the manuscripts are commonly referred to as the "" red book "" and the "" black book "". the name "" red book "", however, may actually be a misnomer. although gaelic tradition on south uist notes a "" red book of macmhuirich "", it is uncertain whether this book is identical to the surviving manuscript. in fact, the manuscript may be partly derived from the red book of tradition. the name
+
+Document 6
+Title: The Wild Pony
+Content: the wild pony is a made for pay - tv movie produced in 1983 by kevin sullivan ( "" anne of green gables "" ) and eda lishman. sullivan and lishman also co - wrote the screenplay based on the book "" the year of the black pony "" by american author walt morey. "" the wild pony "" has the distinction of being the first example of a canadian film produced specifically for pay - tv. the film, directed by kevin sullivan and starring canadian actors marilyn lightstone, art hindle and josh byrne, was filmed in calgary, alberta against the backdrop of the canadian rockies.
+
+Document 7
+Title: Black Book of the Admiralty
+Content: the black book of the admiralty is a compilation of english admiralty law created over the course of several english monarchs'reigns, including the most important decisions of the high court of admiralty. its starting point is the rolls of oleron, which were promulgated in c. 1160 by eleanor of aquitaine, although the "" black book "" is undoubtedly later. the book itself states that the high court of admiralty was established during the reign of edward i ( 1272 – 1307 ), although more recent scholarship places the establishment at c. 1360 during the reign of edward iii. apart from the rolls of oleron, the earliest statute referred
+
+Document 8
+Title: Le Livre noir du capitalisme
+Content: le livre noir du capitalisme ( "" the black book of capitalism "" ) is a 1998 french book published in reaction to "" the black book of communism "". unlike the latter work, "" le livre noir du capitalisme ""'s primary goal is not to try to attribute a number of victims to the political system in question. rather, the body of the book is composed of a series of independent works from various writers who each voice their critique on the various aspects of capitalism. topics covered range from the african slave trade to the effects of globalization.
+
+Document 9
+Title: Joanna Russ
+Content: joanna russ ( february 22, 1937 – april 29, 2011 ) was an american writer, academic and radical feminist. she is the author of a number of works of science fiction, fantasy and feminist literary criticism such as "" how to suppress women's writing "", as well as a contemporary novel, "" on strike against god "", and one children's book, "" kittatinny "". she is best known for "" the female man "", a novel combining utopian fiction and satire, and the story "" when it changed "".
+
+Document 10
+Title: Susanna Thompson
+Content: susanna thompson ( born january 27, 1958 ) is an american actress. she is known for her roles in films "" little giants "" ( 1994 ), "" ghosts of mississippi "" ( 1996 ), "" random hearts "" ( 1999 ) and "" dragonfly "" ( 2002 ), and as karen sammler on abc drama series "" once and again "" ( 1999 – 2002 ). from 2012 to 2014, thompson starred as moira queen as a regular cast member in the cw series "" arrow "".",repeat_1

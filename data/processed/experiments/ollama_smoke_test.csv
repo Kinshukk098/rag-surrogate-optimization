@@ -1,0 +1,35 @@
+run_id,dataset,split,config_id,question_id,question,chunk_size,chunk_overlap,top_k,retrieval_k,similarity_threshold,context_budget,retriever,reranker,candidate_count,filtered_count,returned_count,context_documents_used,context_tokens,llm_model,answer_em,answer_f1,supporting_title_recall,supporting_context_title_recall,retrieval_pipeline_latency_seconds,context_construction_latency_seconds,generation_latency_seconds,total_latency_seconds,input_tokens,output_tokens,total_tokens,gold_answer,predicted_answer,retrieved_titles,context_document_titles,actual_context
+rag_surrogate_v2_hotpotqa_train_config_02785,hotpotqa,train,config_02785,1,In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?,256,0,7,20,0.05,512,bm25,False,20,11,7,5,512,qwen2.5:3b,0.0,0.0,1.0,0.5,0.008221099997172132,0.06448709999676794,3.1440349999975297,3.2167431999914697,802,5,807,1755,1917,"[""Sergei Aleksandrovich Tokarev"", ""Time and Eternity (philosophy book)"", ""Sergei Aleksandrovich Kudryavtsev"", ""Sergei Sholokhov"", ""Einar Arnórsson"", ""Moscow State University"", ""Wesley Englehorn""]","[""Sergei Aleksandrovich Tokarev"", ""Time and Eternity (philosophy book)"", ""Sergei Aleksandrovich Kudryavtsev"", ""Sergei Sholokhov"", ""Einar Arnórsson""]","Document 1
+Title: Sergei Aleksandrovich Tokarev
+Content: sergei aleksandrovich tokarev ( russian : сергеи александрович токарев, 29 december 1899 – 19 april 1985 ) was a russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at moscow state university.
+
+Document 2
+Title: Time and Eternity (philosophy book)
+Content: time and eternity - an essay on the philosophy of religion ( 1st imp. princeton new jersey 1952, princeton university press, 169 pp ) is a philosophy book written by walter terence stace. at the time of writing, stace was a professor of philosophy at princeton university, where he had worked since 1932 after a 22 - year career in the ceylon civil service. "" time and eternity "" was one of his first books about the philosophy of religion and mysticism, after writing throughout most of the 1930s and 1940s that was influenced by phenomenalist philosophy.
+
+Document 3
+Title: Sergei Aleksandrovich Kudryavtsev
+Content: sergei aleksandrovich kudryavtsev ( 1903 – april 25, 1938 ) was a ukrainian communist soviet politician. he was born in kharkiv. during the great purge, he was arrested on october 13, 1937 and later executed by firing squad. after the death of joseph stalin, he was rehabilitated in 1956.
+
+Document 4
+Title: Sergei Sholokhov
+Content: sergei aleksandrovich sholokhov ( russian : сергеи александрович шолохов ; born september 6, 1980 ) is a russian professional football player. as of august 2009, he plays in the russian second division for fc avangard kursk. before 2004 he was known as sergei kocherga ( russian : сергеи кочерга ).
+
+Document 5
+Title: Einar Arnórsson
+Content: einar arnorsson ( 24 february 1880 – 29 march 1955 ) was minister for iceland from 4 may 1915 to 4 january 1917. einar graduated in law from the university of copenhagen in 1906. he was elected to althingi and sat there in 1914 – 1919 and 1931 – 1932 for the independence party. he was minister of education and justice in bjorn þorðarson's cabinet from 1942 to 1944. he was professor of law at the university of iceland from 1911 to 1915 and again after leaving office as minister for iceland from 1917 to 1922. he"
+rag_surrogate_v2_hotpotqa_train_config_02785,hotpotqa,train,config_02785,2,Black Book starred the actress and writer of what heritage?,256,0,7,20,0.05,512,bm25,False,20,19,7,4,512,qwen2.5:3b,0.0,0.0,0.0,0.0,0.005468099996505771,0.0760870000012801,0.34486580000520917,0.42642090000299504,647,5,652,Dutch,Insufficient information.,"[""Black Book (World War II)"", ""Black Book (novel)"", ""Yazidi Book of Revelation"", ""Books of Clanranald"", ""Neil Smith (writer)"", ""Le Livre noir du capitalisme"", ""Ted Danson""]","[""Black Book (World War II)"", ""Black Book (novel)"", ""Yazidi Book of Revelation"", ""Books of Clanranald""]","Document 1
+Title: Black Book (World War II)
+Content: the black book : the ruthless murder of jews by german - fascist invaders throughout the temporarily - occupied regions of the soviet union and in the german nazi death camps established on occupied polish soil during the war 1941 – 1945 alternatively the black book of the holocaust, or simply the black book ( russian : черная книга, "" chornaya kniga "" ; yiddish : דאס שווארצע בוך, "" dos shvartse bukh "" ), was a result of the collaborative effort by the jewish anti - fascist committee ( jac ) and members of the american jewish community to document the anti - jewish crimes of the holocaust and the participation of jews in the fighting and the resistance movement against the nazis during world war ii.
+
+Document 2
+Title: Black Book (novel)
+Content: black book ( dutch : zwartboek ) is a dutch - language 2006 thriller novel by laurens abbink spaink. it is the novelization of the dutch film "" black book "" ( 2006 ). it tells the story of a young jewish woman, rachel stein, and her struggle for survival during and after the second world war. the book has a photo section, and an afterword by paul verhoeven and gerard soeteman.
+
+Document 3
+Title: Yazidi Book of Revelation
+Content: the yazidi book of revelation ( "" kiteba cilwe "" in kurdish ; also transliterated as "" kitab al jilwah "" ) is one of two books on the yazidi religion written in the style of a holy book in the kurmanji dialect of the northern kurdish language, the other being the "" yazidi black book "" ( "" mishefa res "" in kurdish ). it is claimed that the original text of the "" book of revelation "" is kept in the yazidi village of ba'idn and the original text of the "" yazidi black book "" is kept in the village of qasr'tzz at - din.
+
+Document 4
+Title: Books of Clanranald
+Content: the books of clanranald are two paper manuscripts that date to about the early 18th century. the books are written in classical gaelic, and are best known for their traditional account of the history of clan donald. the manuscripts are commonly referred to as the "" red book "" and the "" black book "". the name "" red book "", however, may actually"

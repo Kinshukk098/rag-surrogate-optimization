@@ -1,0 +1,891 @@
+run_id,dataset,split,config_id,question_id,question,chunk_size,chunk_overlap,top_k,retrieval_k,similarity_threshold,context_budget,retriever,reranker,candidate_count,filtered_count,returned_count,context_documents_used,context_tokens,llm_model,answer_em,answer_f1,supporting_title_recall,supporting_context_title_recall,retrieval_pipeline_latency_seconds,context_construction_latency_seconds,generation_latency_seconds,total_latency_seconds,input_tokens,output_tokens,total_tokens,gold_answer,predicted_answer,retrieved_titles,context_document_titles,actual_context
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,1,In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?,384,96,7,20,0.2,512,dense,True,20,20,7,7,512,qwen2.5:3b,0.0,0.0,0.5,0.5,0.24895590002415702,0.04083160002483055,11.811534199980088,12.101321700029075,703,5,708,1755,Insufficient information.,"[""Sergei Aleksandrovich Tokarev"", ""Sergei Aleksandrovich Kudryavtsev"", ""Sergei Kosarev"", ""Sergei Sholokhov"", ""Sergei Dmitrochenko"", ""Sergei Roshchin"", ""Sergei Chikildin""]","[""Sergei Aleksandrovich Tokarev"", ""Sergei Aleksandrovich Kudryavtsev"", ""Sergei Kosarev"", ""Sergei Sholokhov"", ""Sergei Dmitrochenko"", ""Sergei Roshchin"", ""Sergei Chikildin""]","Document 1
+Title: Sergei Aleksandrovich Tokarev
+Content: sergei aleksandrovich tokarev ( russian : сергеи александрович токарев, 29 december 1899 – 19 april 1985 ) was a russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at moscow state university.
+
+Document 2
+Title: Sergei Aleksandrovich Kudryavtsev
+Content: sergei aleksandrovich kudryavtsev ( 1903 – april 25, 1938 ) was a ukrainian communist soviet politician. he was born in kharkiv. during the great purge, he was arrested on october 13, 1937 and later executed by firing squad. after the death of joseph stalin, he was rehabilitated in 1956.
+
+Document 3
+Title: Sergei Kosarev
+Content: sergei aleksandrovich kosarev ( russian : сергеи александрович косарев ; born january 29, 1993 ) is a russian football midfielder, who currently plays for fc mitos novocherkassk.
+
+Document 4
+Title: Sergei Sholokhov
+Content: sergei aleksandrovich sholokhov ( russian : сергеи александрович шолохов ; born september 6, 1980 ) is a russian professional football player. as of august 2009, he plays in the russian second division for fc avangard kursk. before 2004 he was known as sergei kocherga ( russian : сергеи кочерга ).
+
+Document 5
+Title: Sergei Dmitrochenko
+Content: sergei aleksandrovich dmitrochenko ( russian : сергеи александрович дмитроченко ; born june 21, 1993 ) is a russian football midfielder.
+
+Document 6
+Title: Sergei Roshchin
+Content: sergei aleksandrovich roshchin ( russian : сергеи александрович рощин ; born january 28, 1989 ) is a russian football defender, who last played for fc znamya truda orekhovo - zuyevo.
+
+Document 7
+Title: Sergei Chikildin
+Content: sergei aleksandrovich chikildin ( russian : сергеи александрович чикильдин ; born january 25, 1991 )"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,2,Black Book starred the actress and writer of what heritage?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.14750999998068437,0.05304440000327304,0.347506899968721,0.5480612999526784,682,3,685,Dutch,Dutch,"[""Black Book (film)"", ""Black Book (novel)"", ""Halina Reijn"", ""Black Book (World War II)"", ""Black Book (non-standard disc format)"", ""The Wild Pony"", ""Diana Pavlac Glyer""]","[""Black Book (film)"", ""Black Book (novel)"", ""Halina Reijn"", ""Black Book (World War II)"", ""Black Book (non-standard disc format)""]","Document 1
+Title: Black Book (film)
+Content: black book ( dutch : zwartboek ) is a 2006 dutch thriller film co - written and directed by paul verhoeven and starring carice van houten, sebastian koch, thom hoffman, and halina reijn. the film, credited as based on several true events and characters, is about a young jewish woman in the netherlands who becomes a spy for the resistance during world war ii after tragedy befalls her in an encounter with the nazis. the film had its world premiere on 1 september 2006 at the venice film festival and its public release on 14 september 2006 in the netherlands. it is the first film that verhoeven made in the netherlands since "" the fourth man, "" made in 1983 before he moved to the united states.
+
+Document 2
+Title: Black Book (novel)
+Content: black book ( dutch : zwartboek ) is a dutch - language 2006 thriller novel by laurens abbink spaink. it is the novelization of the dutch film "" black book "" ( 2006 ). it tells the story of a young jewish woman, rachel stein, and her struggle for survival during and after the second world war. the book has a photo section, and an afterword by paul verhoeven and gerard soeteman.
+
+Document 3
+Title: Halina Reijn
+Content: halina reijn ( born 10 november 1975 ) is a dutch actress and writer.
+
+Document 4
+Title: Black Book (World War II)
+Content: the black book : the ruthless murder of jews by german - fascist invaders throughout the temporarily - occupied regions of the soviet union and in the german nazi death camps established on occupied polish soil during the war 1941 – 1945 alternatively the black book of the holocaust, or simply the black book ( russian : черная книга, "" chornaya kniga "" ; yiddish : דאס שווארצע בוך, "" dos shvartse bukh "" ), was a result of the collaborative effort by the jewish anti - fascist committee ( jac ) and members of the american jewish community to document the anti - jewish crimes of the holocaust and the participation of jews in the fighting and the resistance movement against the nazis during world war ii.
+
+Document 5
+Title: Black Book (non-standard disc format)
+Content: black book is an unofficial designation of optical disc ( od ) formats that defy official standards for cd, dvd, hd dvd and blu - ray discs"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,3,Which actor does American Beauty and American Beauty have in common?,384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,0.5,0.2515226000105031,0.055008199997246265,3.0601969999843277,3.366727799992077,694,4,698,Kevin Spacey,Kevin Spacey,"[""American Beauty (1999 film)"", ""American Beauty (1927 film)"", ""List of accolades received by American Beauty"", ""La Belle Américaine"", ""American Beauty (soundtrack)"", ""Christopher Greenbury"", ""American Beauty/American Psycho Tour""]","[""American Beauty (1999 film)"", ""American Beauty (1927 film)"", ""List of accolades received by American Beauty"", ""La Belle Américaine""]","Document 1
+Title: American Beauty (1999 film)
+Content: american beauty is a 1999 american drama film directed by sam mendes and written by alan ball. kevin spacey stars as lester burnham, a 42 - year - old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, angela ( mena suvari ). annette bening co - stars as lester's materialistic wife, carolyn, and thora birch plays their insecure daughter, jane. wes bentley, chris cooper, and allison janney also feature. the film is described by academics as a satire of american middle - class notions of beauty and personal satisfaction ; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self - liberation, and redemption.
+
+Document 2
+Title: American Beauty (1927 film)
+Content: american beauty is a lost 1927 american silent film romantic drama produced and distributed by first national pictures. this film was directed by richard wallace and starred billie dove. it was based on a short story "" american beauty "" by wallace irwin. she is supported by walter mcgrail and margaret livingston.
+
+Document 3
+Title: List of accolades received by American Beauty
+Content: "" american beauty "" is a 1999 american drama film directed by sam mendes and written by alan ball. the film stars kevin spacey as lester burnham, a middle - aged office worker who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend. released in north america on september 15, 1999, "" american beauty "" was positively received by critics and audiences alike ; it was the best - reviewed american film of the year and grossed over $ 350 million worldwide. reviewers praised all aspects of the production, with particular emphasis on mendes, spacey and ball ; criticism tended to focus on the familiarity of the characters and setting. at the 1999 academy awards, the film won best picture, best director, best actor ( for spacey ), best original screenplay and best cinematography ( for conrad hall ). the film was nominated for and won numerous other awards and honors, mainly for the direction, writing, and acting.
+
+Document 4
+Title: La Belle Américaine
+Content: la belle americaine english : the american beauty, is a french comedy film from 1961, directed by robert dhery, written by alfred adam, starring alfred adam and louis de funes. the film was known under the titles : "" la bella americana "" ( italy ), "" the american beauty "" ( english"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,4,Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?,384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.6666666666666666,1.0,1.0,0.06435830000555143,0.05046639998909086,0.3628000000026077,0.47762469999725,732,3,735,40 members,40,"[""Ken Pruitt"", ""Wisconsin Legislature"", ""Nevada Legislature"", ""Florida Senate"", ""Alaska Legislature"", ""Upper house"", ""Icelandic parliamentary election, 1930""]","[""Ken Pruitt"", ""Wisconsin Legislature"", ""Nevada Legislature"", ""Florida Senate"", ""Alaska Legislature"", ""Upper house""]","Document 1
+Title: Ken Pruitt
+Content: ken pruitt ( born january 24, 1957 ) was a republican member of the florida senate, representing the 28th district from 2000 to 2009. his district includes portions of indian river, martin, okeechobee, palm beach and st. lucie counties. he was previously a member of the florida house of representatives from 1990 through 2000.
+
+Document 2
+Title: Wisconsin Legislature
+Content: the wisconsin legislature is the state legislature of the u. s. state of wisconsin. the legislature is a bicameral body composed of the upper house wisconsin state senate and the lower wisconsin state assembly, both of which have had republican majorities since january 2011. with both houses combined, the legislature has 132 members representing an equal number of constituent districts. the legislature convenes at the state capitol in madison.
+
+Document 3
+Title: Nevada Legislature
+Content: the nevada legislature is the state legislature of the u. s. state of nevada. the legislature is a bicameral body, consisting of the lower house nevada assembly, with 42 members, and the upper house nevada senate, with 21 members. all 63 members of the legislature are elected from an equal amount of constituent districts across the state. the legislature is the third smallest bicameral state legislature in the united states ( the alaska legislature is the smallest bicameral, with only 60 members and the delaware general assembly has 62 members ).
+
+Document 4
+Title: Florida Senate
+Content: the florida senate is the upper house of the legislature of the u. s. state of florida. along with the house of representatives, it composes the florida legislature. the senate has 40 members, each elected from a single - member district with a population of about 470, 000. the senate meets at the state capitol in tallahassee.
+
+Document 5
+Title: Alaska Legislature
+Content: the alaska legislature is the state legislature of the u. s. state of alaska. it is a bicameral institution, consisting of the lower alaska house of representatives, with 40 members, and the upper house alaska senate, with 20 members. there are 40 house districts ( 1 - 40 ) and 20 senate districts ( a - t ). with a total of 60 lawmakers, the alaska legislature is the smallest bicameral state legislature in the united states and the second - smallest of all state legislatures ( only the 49 - member unicameral nebraska legislature is smaller ). there are no term limits for either chamber.
+
+Document 6
+Title: Upper house
+Content: an upper house, sometimes called a senate, is"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,5,"Between Greyia and Calibanus, which genus contains more species?",384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,1.0,1.0,0.06961119995685294,0.05951629998162389,0.3636691000428982,0.49279659998137504,651,4,655,Greyia,Calibanus,"[""Greyia"", ""Calibanus"", ""Leptofoenus"", ""Calyptocephalellidae"", ""Banksiamyces"", ""Ceratozamia"", ""Sinopieris""]","[""Greyia"", ""Calibanus"", ""Leptofoenus"", ""Calyptocephalellidae"", ""Banksiamyces""]","Document 1
+Title: Greyia
+Content: greyia is a genus of plant in family melianthaceae. it contains three species :
+
+Document 2
+Title: Calibanus
+Content: calibanus is a genus of two species of flowering plants, both evergreen succulents from dry areas of northeastern mexico. the apg iii classification system places it in the family asparagaceae, subfamily nolinoideae ( formerly the family ruscaceae. ) it was formerly included in the agavaceae ( now agavoideae ) but is now separated from them, for it is polycarpic and dioecious. its name refers to the monster caliban, an antagonist in shakespeare's "" the tempest "".
+
+Document 3
+Title: Leptofoenus
+Content: leptofoenus is a genus of wasp in the family pteromalidae, the type genus subfamily leptofoeninae found in south, central, and southern north america. the genus contains five living species and one extinct species known from early miocene burdigalian stage dominican amber deposits on the island of hispaniola. with body sizes ranging from 11 - "" leptofoenus "" species are larger than nearly all other species in pteromalidae. the genus bears a notable resemblance to the wasp families pelecinidae, gasteruptiidae, and stephanidae.
+
+Document 4
+Title: Calyptocephalellidae
+Content: the calyptocephalellidae are a family of toads found in chile containing two genera, "" calyptocephalella "" and "" telmatobufo "". the "" calyptocephalella "" genus contains one species, "" c. gayi "", the helmeted water toad, which is a large aquatic toad weighing up to 0. 5 kg. the "" telmatobufo "" genus contains four species, "" t. australis "", "" t. bullocki "", "" t. ignotus "", and "" t. venustus "". all species within the family are considered threatened, with "" t. bullocki "" and "" t. venustus "" being classified as critically endangered.
+
+Document 5
+Title: Banksiamyces
+Content: banksiamyces is a genus of fungi in the order helotiales, with a tentative placement in the family helotiaceae. the genus contains four species, which grow on the seed follicles of the dead infructescences or """
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,6,Did John Updike and Tom Clancy both publish more than 15 bestselling novels?,384,96,7,20,0.2,512,dense,True,20,20,7,7,512,qwen2.5:3b,0.0,0.0,1.0,1.0,0.4274153999867849,0.043334499991033226,0.3931989000411704,0.8639488000189885,714,5,719,yes,Insufficient information.,"[""John Updike"", ""Tom Clancy"", ""Tom Clancy's Net Force Explorers: Death Match"", ""Tom Clancy's Net Force Explorers: Duel Identity"", ""Tom Clancy's Net Force Explorers: Gameprey"", ""Tom Clancy's Net Force Explorers: High Wire"", ""Tom Clancy's Net Force Explorers: Safe House""]","[""John Updike"", ""Tom Clancy"", ""Tom Clancy's Net Force Explorers: Death Match"", ""Tom Clancy's Net Force Explorers: Duel Identity"", ""Tom Clancy's Net Force Explorers: Gameprey"", ""Tom Clancy's Net Force Explorers: High Wire"", ""Tom Clancy's Net Force Explorers: Safe House""]","Document 1
+Title: John Updike
+Content: john hoyer updike ( march 18, 1932 – january 27, 2009 ) was an american novelist, poet, short story writer, art critic, and literary critic. one of only three writers to win the pulitzer prize for fiction more than once ( the others were booth tarkington and william faulkner ), updike published more than twenty novels, more than a dozen short - story collections, as well as poetry, art and literary criticism and children's books during his career.
+
+Document 2
+Title: Tom Clancy
+Content: thomas leo "" tom "" clancy jr. ( april 12, 1947 – october 1, 2013 ) was an american novelist best known for his technically detailed espionage and military - science story lines set during and after the cold war. seventeen of his novels were bestsellers, and more than 100 million copies of his books are in print. his name was also used on movie scripts written by ghost writers, nonfiction books on military subjects, and video games. he was a part - owner of the baltimore orioles and vice - chairman of their community activities and public affairs committees.
+
+Document 3
+Title: Tom Clancy's Net Force Explorers: Death Match
+Content: tom clancy's net force explorers or net force explorers is a series of young adult novels created by tom clancy and steve pieczenik as a spin - off of the military fiction series tom clancy's net force.
+
+Document 4
+Title: Tom Clancy's Net Force Explorers: Duel Identity
+Content: tom clancy's net force explorers or net force explorers is a series of young adult novels created by tom clancy and steve pieczenik as a spin - off of the military fiction series tom clancy's net force.
+
+Document 5
+Title: Tom Clancy's Net Force Explorers: Gameprey
+Content: tom clancy's net force explorers or net force explorers is a series of young adult novels created by tom clancy and steve pieczenik as a spin - off of the military fiction series tom clancy's net force.
+
+Document 6
+Title: Tom Clancy's Net Force Explorers: High Wire
+Content: tom clancy's net force explorers or net force explorers is a series of young adult novels created by tom clancy and steve pieczenik as a spin - off of the military fiction series tom clancy's net force.
+
+Document 7
+Title: Tom Clancy's Net Force Explorers: Safe House
+Content: tom clancy's net force explorers or net force explorers is a series of young adult novels created by tom clancy and"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,7,Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?,384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.7555323999840766,0.11583640001481399,0.3686907999799587,1.2400595999788493,732,3,735,John André,John André,"[""John André"", ""Benedict Arnold"", ""Benjamin Lincoln"", ""Siege of Yorktown"", ""Battle of Germantown"", ""Board of War"", ""James Hogun""]","[""John André"", ""Benedict Arnold"", ""Benjamin Lincoln"", ""Siege of Yorktown""]","Document 1
+Title: John André
+Content: john andre ( 2 may 1750 – 2 october 1780 ) was a british army officer hanged as a spy by the continental army during the american revolutionary war for assisting benedict arnold's attempted surrender of the fort at west point, new york to the british.
+
+Document 2
+Title: Benedict Arnold
+Content: benedict arnold ( january 14, 1741 [ o. s. january 3, 1740 ] june 14, 1801 ) was a general during the american revolutionary war, who fought for the american continental army, and later defected to the british army. while a general on the american side, he obtained command of the fortifications at west point, new york ( which after 1802 would become the site of the u. s. military academy ), overlooking the cliffs at the hudson river ( upriver from british - occupied new york city ), and planned to surrender them to british forces. this plan was exposed in september 1780. he was commissioned into the british army as a brigadier general.
+
+Document 3
+Title: Benjamin Lincoln
+Content: benjamin lincoln ( january 24, 1733 ( o. s. january 13, 1732 ) – may 9, 1810 ) was an american army officer. he served as a major general in the continental army during the american revolutionary war. lincoln is notable for being involved in three major surrenders during the war : his participation in the battles of saratoga ( sustaining a wound shortly afterward ) contributed to john burgoyne's surrender of a british army, he oversaw the largest american surrender of the war at the 1780 siege of charleston, and, as george washington's second in command, he formally accepted the british surrender at yorktown.
+
+Document 4
+Title: Siege of Yorktown
+Content: the siege of yorktown, also known as the battle of yorktown, the surrender at yorktown, german battle or the siege of little york, ending on october 19, 1781, at yorktown, virginia, was a decisive victory by a combined force of american continental army troops led by general george washington and french army troops led by the comte de rochambeau over a british army commanded by british peer and lieutenant general charles cornwallis. the culmination of the yorktown campaign, the siege proved to be the last major land battle of the american revolutionary war in the north american theater, as the surrender by cornwallis, and the capture of both him and his army, prompted the british government to negotiate an end to the conflict. the battle boosted faltering american morale and revived french enthusiasm for the war, as well as undermining"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,8,which Mexican and American film actress is Ethel Houbiers  French voice of ,384,96,7,20,0.2,512,dense,True,20,20,7,7,512,qwen2.5:3b,0.0,0.8,1.0,1.0,0.5265561999985948,0.08582199999364093,0.4018062999821268,1.0141844999743626,721,5,726,Salma Hayek Pinault,Salma Hayek,"[""Ethel Houbiers"", ""Salma Hayek"", ""Dorothée Jemma"", ""Lisette Dufour"", ""Emmanuel Curtil"", ""Virginie Ledieu"", ""Roger Carel""]","[""Ethel Houbiers"", ""Salma Hayek"", ""Dorothée Jemma"", ""Lisette Dufour"", ""Emmanuel Curtil"", ""Virginie Ledieu"", ""Roger Carel""]","Document 1
+Title: Ethel Houbiers
+Content: ethel houbiers is a french voice actress. she is the french voice of penelope cruz and salma hayek.
+
+Document 2
+Title: Salma Hayek
+Content: salma hayek pinault ( hayek jimenez ) ( born september 2, 1966 ), known professionally as salma hayek, is a mexican and american film actress, producer, and former model. she began her career in mexico starring in the telenovela "" teresa "" and starred in the film "" el callejon de los milagros "" ( "" miracle alley "" ) for which she was nominated for an ariel award. in 1991 hayek moved to hollywood and came to prominence with roles in movies such as "" desperado "" ( 1995 ), "" from dusk till dawn "" ( 1996 ), "" dogma "" ( 1999 ), and "" wild wild west "" ( 1999 ).
+
+Document 3
+Title: Dorothée Jemma
+Content: dorothee jemma ( born june 16, 1956 ) is a french voice actress specializing in dubbing. she is the dub voice of jennifer aniston, melanie griffith and sheryl lee.
+
+Document 4
+Title: Lisette Dufour
+Content: lisette dufour ( born 1949 ) is a quebecoise voice actress who is better known as the french voice of lisa simpson on "" the simpsons "".
+
+Document 5
+Title: Emmanuel Curtil
+Content: emmanuel curtil ( born 7 february 1971 ) is a french actor known primarily for his voice work, having dubbed the voice of matthew perry ( chandler ) for the first eight seasons of the american sitcom "" friends "". curtil is also the "" french voice "" of jim carrey. he is also the current voice of goofy, assuming that duty from gerard rinaldi, who died in 2012.
+
+Document 6
+Title: Virginie Ledieu
+Content: virginie ledieu ( born august 2, 1960 ) is a french voice actress who specializes in dubbing. she is the daughter of marion game. she is the official dubbing voice of alyson hannigan.
+
+Document 7
+Title: Roger Carel
+Content: roger carel ( born roger bancharel ; 14 august 1927 ) is a french actor and voice talent, known for his recurring film roles as asterix, the french voice of "" star wars'"" c - 3po, and the french voice of "" winnie the pooh "". he is also dubbing david suchet as hercule poirot in agatha christie's poiro"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,9,Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?,384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.7206139999907464,0.12223579996498302,0.368972499971278,1.2118222999270074,717,5,722,Gatwick Airport,Gatwick Airport,"[""Gatwick Airport"", ""Croydon Airport"", ""Heathrow Airport"", ""International air travel from the United Kingdom"", ""Exeter Airport"", ""Grantley Adams International Airport"", ""Dublin Airport""]","[""Gatwick Airport"", ""Croydon Airport"", ""Heathrow Airport"", ""International air travel from the United Kingdom""]","Document 1
+Title: Gatwick Airport
+Content: gatwick airport ( also known as london gatwick ) ( iata : lgw, icao : egkk ) is a major international airport in south - east england, 29. 5 mi south of central london and 2. 7 nm north of crawley. it is the second - busiest airport by total passenger traffic in the united kingdom, after london heathrow. gatwick is the eighth - busiest airport in europe. until 2016, it was the busiest single - use runway airport in the world before being overtaken by mumbai's chhatrapati shivaji international airport.
+
+Document 2
+Title: Croydon Airport
+Content: croydon airport ( icao : egcr ) was an airport in south london, england. it was the main airport for london before it was replaced by northolt aerodrome, london heathrow airport and gatwick airport. the terminal building and entrance lodge are grade ii listed buildings.
+
+Document 3
+Title: Heathrow Airport
+Content: heathrow airport ( also known as london heathrow ) ( iata : lhr, icao : egll ) is a major international airport in london, united kingdom. heathrow is the second busiest airport in the world by international passenger traffic ( surpassed by dubai international in 2014 ), as well as the busiest airport in europe by passenger traffic, and the seventh busiest airport in the world by total passenger traffic. in 2016, it handled a record 75. 7 million passengers, a 1. 0 % increase from 2015.
+
+Document 4
+Title: International air travel from the United Kingdom
+Content: international air travel from the united kingdom refers to the commercial carriage of passengers between the uk and the rest of the world. in 2008, london heathrow airport which is also the busiest international airport on earth handled 67, 054, 745 passengers which is more than the total population of the united kingdom. the 20 busiest airports in the uk handled close to 230 million passengers in 2008 ( 185 million of whom were international passengers ). the geographical size of the uk means that many flights that would be considered domestic in for example the united states are actually international ( i. e. the distance from heathrow to charles de gaulle airport is roughly the same as the distance between john f. kennedy international airport and washington dulles international airport ). the london airports, heathrow, gatwick and stansted alongside manchester airport rank amongst the world's busiest airports by international passenger traffic. according to 2008 statistics the best served nations by direct flights from the uk were france,"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,10,Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?,384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.0,1.0,1.0,1.0081994000356644,0.08937110000988469,0.40122459997655824,1.4987951000221074,721,6,727,The Changing Scottish Landscape,cairnburgh castle,"[""Cairnburgh Castle"", ""Isabella Kelly"", ""Abergairn Castle"", ""Castillo de Tabernas"", ""Scharfenstein Castle (Kiedrich)"", ""Inch Castle"", ""Schauenberg""]","[""Cairnburgh Castle"", ""Isabella Kelly"", ""Abergairn Castle"", ""Castillo de Tabernas"", ""Scharfenstein Castle (Kiedrich)"", ""Inch Castle""]","Document 1
+Title: Cairnburgh Castle
+Content: cairnburgh castle is a ruined castle that is located on the islands of cairn na burgh mor and cairn na burgh beag, argyll and bute, scotland. these islands are at the northern extremity of the treshnish isles at the mouth of loch tuath, mull north of iona. 1991's "" the changing scottish landscape "" characterizes it as "" one of the most isolated fortifications in britain... [ and ] also one of the strangest. ""
+
+Document 2
+Title: Isabella Kelly
+Content: isabella kelly, nee fordyce, also isabella hedgeland ( born at cairnburgh castle in the scottish highlands and baptised on 4 may 1759 – died on 25 june 1857 in london ) was a scottish novelist and poet.
+
+Document 3
+Title: Abergairn Castle
+Content: abergairn castle is a ruined castle, dating from the 17th century, about one mile north of ballater, aberdeenshire, scotland. it is built on the top of an isolated kame, at the north east of the entrance to glen gairn.
+
+Document 4
+Title: Castillo de Tabernas
+Content: castillo de tabernas is a ruined castle on the outskirts of the municipality of tabernas, almeria province, in the autonomous community of andalusia, spain. it was built in the 11th century during the time of arab domination. it is of moorish style and is situated on top of a hill. when it was built, it occupied the entire hill, though currently only a part is preserved. in 1993, it was declared a bien de interes cultural monument. during the siege of almeria, ferdinand and isabella ensconced themselves in the castle.
+
+Document 5
+Title: Scharfenstein Castle (Kiedrich)
+Content: scharfenstein castle ( german : "" burg scharfenstein "" ), a ruined castle near the town of kiedrich in hesse, germany, was part of the bishopric of mainz ’ s border fortifications. it was erected in 1160 under christian i ( archbishop of mainz ).
+
+Document 6
+Title: Inch Castle
+Content: inch castle is a ruined castle located on the southern tip of inch island in county donegal, ireland. the castle was constructed around 1430 by the gaelic irish lord neachtain o'donnell for his father - in - law cahir o'doherty. the o'doherty's were the dominant family on the nearby peninsula of inishowen"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,11,The facility where Robert Croft worked as a navy instructor was also known as?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.2,1.0,1.0,0.7231214999919757,0.09528420004062355,0.4054807999636978,1.223886499996297,697,7,704,"""Home of the Submarine Force""",us naval submarine base new london,"[""Robert Croft (diver)"", ""RAF Croft"", ""Naval Consolidated Brig, Miramar"", ""Naval Submarine Base New London"", ""Christopher Bassford"", ""Sierra Academy of Aeronautics"", ""Rob Sitch""]","[""Robert Croft (diver)"", ""RAF Croft"", ""Naval Consolidated Brig, Miramar"", ""Naval Submarine Base New London"", ""Christopher Bassford""]","Document 1
+Title: Robert Croft (diver)
+Content: robert croft is a free - diver who, in 1967, became the first person to free - dive beyond the depth of 200 feet. croft was a us navy diving instructor in 1962 at the us naval submarine base new london submarine school in groton, connecticut. at the submarine escape training tank, instructors train prospective submariners how to escape from a disabled submarine, which could be resting on the sea bottom.
+
+Document 2
+Title: RAF Croft
+Content: royal air force croft or raf croft is a former royal air force station located 4. 6 mi south of darlington, county durham, england and 8 mi north east of richmond, north yorkshire. the site is also known locally as croft aerodrome or neasham.
+
+Document 3
+Title: Naval Consolidated Brig, Miramar
+Content: naval consolidated brig, miramar ( navconbrig ) is a military prison operated by the u. s. navy at marine corps air station miramar in miramar, san diego, california, just under 10 mi north of downtown san diego. it is one of three navy consolidated brigs and is the pacific area regional confinement facility for the united states department of defense. it is also known as the joint regional correctional facility southwest. the 208000 sqft facility has a capacity of up to 400 male and / or female prisoners and is staffed with 31 civilian and 173 military personnel.
+
+Document 4
+Title: Naval Submarine Base New London
+Content: naval submarine base new london is the united states navy's primary east coast submarine base, also known as the "" home of the submarine force "". it is located in groton, connecticut.
+
+Document 5
+Title: Christopher Bassford
+Content: christopher bassford ( born 1953 ) is an american military historian, best known for his works on the prussian military philosopher carl von clausewitz. bassford graduated from the college of william and mary with a degree in history and honors for his dissertation on tactical nuclear weapons and completed his ma in american diplomatic history at ohio university. subsequent to receiving his ma, he served five years on active duty as a u. s. army field artillery officer, with tours in korea and germany. he completed a ph. d. in modern european history at purdue university and became director of studies in the theory and nature of war at the u. s. marine corps ( usmc ) command and staff college, then associate professor of national policy issues at the u. s. army war college. he was professor of strategy at the national war college ( nwc ),"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,12,"Who released the song ""With or Without You"" first, Jai McDowall or U2?",384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.7160249999724329,0.10540159995434806,0.32723120000446215,1.148657799931243,707,3,710,U2,U2,"[""With or Without You"", ""Believe (Jai McDowall album)"", ""Bill Grainer"", ""The Fly (song)"", ""Jai Ho! (You Are My Destiny)"", ""U218 Singles"", ""Heartbeat (The Fray song)""]","[""With or Without You"", ""Believe (Jai McDowall album)"", ""Bill Grainer"", ""The Fly (song)"", ""Jai Ho! (You Are My Destiny)""]","Document 1
+Title: With or Without You
+Content: "" with or without you "" is a song by irish rock band u2. it is the third track from their fifth studio album, "" the joshua tree "" ( 1987 ), and was released as the album's lead single on 16 march 1987. the song was the group's most successful single at the time, becoming their first number - one hit in both the united states and canada by topping the "" billboard "" hot 100 for three weeks and the "" rpm "" national singles chart for one week, with a further three weeks at number two.
+
+Document 2
+Title: Believe (Jai McDowall album)
+Content: believe is the debut studio album by scottish singer and "" britain's got talent "" winner jai mcdowall. the album was released on 9 december 2011 via sony music and syco music. a promotional single, "" with or without you "" was released and performed on various uk shows such as "" daybreak "".
+
+Document 3
+Title: Bill Grainer
+Content: bill grainer is a grammy certified american songwriter and producer. he has written for such artists as jai mcdowall, linda eder, and jennifer hudson, with whom he co - wrote the song "" stand up "" for her grammy award - winning self - titled debut album.
+
+Document 4
+Title: The Fly (song)
+Content: "" the fly "" is a song by irish rock band u2. it is the seventh track from their 1991 album, "" achtung baby "", and it was released as the album's first single on 21 october 1991. "" the fly "" introduced a more abrasive sounding u2, as the song featured danceable hip - hop beats, industrial textures, distorted vocals, and an elaborate guitar solo. lead vocalist bono described the song as "" the sound of four men chopping down "" the joshua tree "", "" due to its departure from the traditional sound that had characterised the band in the 1980s.
+
+Document 5
+Title: Jai Ho! (You Are My Destiny)
+Content: "" jai ho! ( you are my destiny ) "" is a song performed by american girl group the pussycat dolls for their second studio album "" doll domination "" ( 2008 ). it was released on february 23, 2009, by interscope records as the fourth single from the record. after watching "" slumdog millionaire "" record executives jimmy iovine and ron fair wanted to turn "" jai ho "" into a "" pop record without deviating from the original melody "" and asked scherzinger to do"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,13,"Which ""Roseanne"" star is in Scream 2?",384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.9978874000371434,0.143794399977196,0.39948180003557354,1.541163600049913,768,7,775,Laurie Metcalf,Laurie Metcalf,"[""Scream 2"", ""Laurie Metcalf"", ""Gale Weathers"", ""Sidney Prescott"", ""Scream (franchise)"", ""List of Scream characters"", ""Bobby Gaylor""]","[""Scream 2"", ""Laurie Metcalf"", ""Gale Weathers"", ""Sidney Prescott""]","Document 1
+Title: Scream 2
+Content: scream 2 is a 1997 american slasher film directed by wes craven and written by kevin williamson. it stars david arquette, neve campbell, courteney cox, sarah michelle gellar, jamie kennedy, laurie metcalf, jerry o'connell, jada pinkett and liev schreiber.
+
+Document 2
+Title: Laurie Metcalf
+Content: laura elizabeth "" laurie "" metcalf ( born june 16, 1955 ) is an american actress. she is known for her television roles as jackie harris on the abc sitcom "" roseanne "" ( 1988 – 97 ) ; carolyn bigsby on "" desperate housewives "" ( 2006 ) ; the recurring role of mary cooper on "" the big bang theory "" ( 2007 – present ) ; dr. jenna james on "" getting on "" ( 2013 – 15 ), and marjorie mccarthy in "" the mccarthys "" ( 2014 – 15 ). she voiced the role of mrs. davis in the "" toy story "" film series. her other film appearances include "" making mr. right "" ( 1987 ), "" jfk "" ( 1991 ), "" mistress "" ( 1992 ), and as debbie salt / mrs. loomis in "" scream 2 "" ( 1997 ). she has also appeared in commercials for plan usa, a humanitarian organization which helps children in need around the world.
+
+Document 3
+Title: Gale Weathers
+Content: gale weathers is a fictional character of the "" scream "" series. the character was created by kevin williamson and is portrayed by "" friends "" star courteney cox. she first appeared in "" scream "" ( 1996 ), followed by three sequels : "" scream 2 "" ( 1997 ), "" scream 3 "" ( 2000 ) and "" scream 4 "" ( 2011 ). the character appears in the "" scream "" films as an ambitious, strong - willed journalist and writer who is initially built up as an antagonist, but ultimately joins forces with sidney prescott and dewey riley in order to investigate and stop the ghostface murders.
+
+Document 4
+Title: Sidney Prescott
+Content: sidney prescott is a fictional character and the primary protagonist of the "" scream "" series. the character was created by kevin williamson and is portrayed by canadian actress neve campbell. she first appeared in "" scream "" ( 1996 ) followed by three sequels : "" scream 2 "" ( 1997 ), "" scream 3 "" ( 2000 ) and "" scream 4 "" ( 2011 ). the character appears in the "" scream "" films as the target of a series of killers who adopt the ghostface persona"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,14,In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,1.0,1.0,0.49699020001571625,0.12770469998940825,0.3868555999943055,1.01155049999943,724,5,729,"Nairobi, Kenya",Dar es salaam,"[""Fastjet Tanzania"", ""Fly540"", ""Goldie &amp; McCulloch"", ""ATP Flight School"", ""SemGroup"", ""Coty, Inc."", ""Namibia Breweries Limited""]","[""Fastjet Tanzania"", ""Fly540"", ""Goldie &amp; McCulloch"", ""ATP Flight School"", ""SemGroup""]","Document 1
+Title: Fastjet Tanzania
+Content: fastjet airlines limited ( tanzania ), also known as fastjet tanzania, is a low - cost airline that operates flights under the fastjet brand in tanzania. the airline was founded in 2011 as "" fly540 tanzania "", but through the acquisition of fly540 in 2012, it was rebranded as fastjet tanzania. it is based in dar es salaam. the airline carried more than 350, 000 passengers in the first year of operations and sold one million seats by december 2014.
+
+Document 2
+Title: Fly540
+Content: five forty aviation ltd, trading as fly540, is a low - cost airline which commenced operations in 2006 and is based in nairobi, kenya, that operates domestic and international passenger and freight services. the airline had two subsidiary airlines, fly540 ghana ( suspended in may 2014 and since sold ) and fly540 angola ( suspended in may 2014 ), but has since focused its business expansion plans on east africa.
+
+Document 3
+Title: Goldie &amp; McCulloch
+Content: the company was originally founded in galt as the dumfries foundry in 1844 by james andrews and james crombie. the exact number of products manufactured by the foundry during this period is unclear, however it is known that apart from steam engines the company also produced safe doors.
+
+Document 4
+Title: ATP Flight School
+Content: atp flight school, headquartered in jacksonville, florida, is the largest flight training company in the united states. the privately held company was founded in atlanta, ga by its current management, a small group of airline pilots, in 1984. atp ’ s initial focus was providing flight training to u. s. military pilots who were seeking their airline transport pilot certificates to transition over to commercial air carrier operations. maintaining a focus on professional flight training, atp later expanded its course offerings to include ab - initio training programs for both domestic and international students, seeking a career in commercial aviation. today, atp is the leading supplier of professionally trained pilots to the nation's regional airlines.
+
+Document 5
+Title: SemGroup
+Content: semgroup is a transporter of oil and natural gas through pipelines from refineries to end users, an operator of oil terminals, as well as the manufacturer and seller of asphalt. the company began trading on the new york stock exchange under the symbol'semg'in 2010. the company was originally founded in 2000 and as of 2007 was the 18th largest private company in the us, but filed for bankruptcy in 2008."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,15,"What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,1.0,1.0239516000146978,0.1354492999962531,0.3697802000096999,1.5291811000206508,666,5,671,Cyclic Defrost,Cyclic Defrost,"[""Cyclic Defrost"", ""Experimental hip hop"", ""Inéz"", ""List of sound artists"", ""Beautiful Eulogy"", ""Sixtoo"", ""Lloyd Dunn""]","[""Cyclic Defrost"", ""Experimental hip hop"", ""Inéz"", ""List of sound artists""]","Document 1
+Title: Cyclic Defrost
+Content: cyclic defrost is an australian specialist electronic music magazine. it was founded and edited by sebastian chan, with current editors bob baker fish, chris downton and peter hollo. it covers independent electronic music, avant - rock, experimental sound art and left field hip hop.
+
+Document 2
+Title: Experimental hip hop
+Content: experimental hip hop, also known as abstract hip hop, is a genre of hip hop that employs structural elements typically considered unconventional in traditional hip hop music. some notable experimental hip hop record labels include definitive jux, anticon, big dada and ninja tune. while most experimental hip hop incorporates turntablism and is produced electronically, some artists have introduced acoustic elements to the music to facilitate it being performed live.
+
+Document 3
+Title: Inéz
+Content: ines reingold - tali, known by her stage names inez, inez or inez, is an estonian new media artist, musician, composer and writer on sound art, noise, electronic music, glitch and digital culture. she lives and works in finland. since mid - 1990's she has belonged to a new generation of composers in finland interested in experimental interdisciplinary art projects and electronic music. her repertoire includes electroacoustic chamber music, experimental, electronic and film music. she has been engaged in commissioned projects in the fields of electroacoustic, contemporary chamber music and experimental music, in different audiovisual art projects, video art, poetry, performance, theater, short films and radio - art. her compositions have been broadcast internationally on various radio stations and television channels in many european countries, australia, canada and the usa. her works have been published on solo - albums and international compilations by various labels, incl. k - tel international, fg music / naxos, yocoma, yap and charm of sound. she has been nominated to participate in various international festivals, exhibitions and conferences, florence biennale ( biennale internazionale dell ’ arte contemporanea di firenze ) 2007 in italy, lacda international juried competition winners show ( award ) at the los angeles center for digital art in usa 2007, 30e festival international des musiques syntheses 2000 in france and international conferences on musicology, among others.
+
+Document 4
+Title: List of sound artists
+Content: this is a list of sound artists. sound art is a diverse group of art practices that considers wide notions of sound, listening and hearing as its predominant focus. there is contention as to"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,16,What is the population of the city that Munsonville is in the northwest corner of?,384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.4,1.0,1.0,0.7567587000085041,0.11057670001173392,0.3776332000270486,1.2449686000472866,750,4,754,729 at the 2010 census,729,"[""Munsonville, New Hampshire"", ""Nelson, New Hampshire"", ""Gainesville, Florida"", ""Mount Vernon, Indiana"", ""Ellicott City, Maryland"", ""Sullivan's Corner Historic District"", ""Baraki Barak District""]","[""Munsonville, New Hampshire"", ""Nelson, New Hampshire"", ""Gainesville, Florida"", ""Mount Vernon, Indiana"", ""Ellicott City, Maryland"", ""Baraki Barak District""]","Document 1
+Title: Munsonville, New Hampshire
+Content: munsonville is an unincorporated community in the town of nelson in cheshire county, new hampshire. it is located in the northwestern corner of nelson, around the outlet of granite lake.
+
+Document 2
+Title: Nelson, New Hampshire
+Content: nelson is a town in cheshire county, new hampshire, united states. the population was 729 at the 2010 census. nelson includes the village of munsonville.
+
+Document 3
+Title: Gainesville, Florida
+Content: gainesville is the county seat and largest city in alachua county, florida, united states, and the principal city of the gainesville, florida metropolitan statistical area ( msa ). the population of gainesville in the 2013 us census estimates was 127, 488, a 2. 4 % growth from 2010. gainesville is the largest city in the region of north central florida. it is also a component of the gainesville - lake city combined statistical area, which had a 2013 population of 337, 925.
+
+Document 4
+Title: Mount Vernon, Indiana
+Content: mount vernon is a city in and the county seat of posey county, indiana, united states. located in the state's far southwestern corner, within 15 miles of either the southernmost or westernmost points it is the westernmost city in the state, but not the southernmost, that being rockport, about 40 miles to the southeast. the population was 6, 687 at the 2010 census. it is located in black township and is part of the evansville, indiana, metropolitan area, which had a 2010 population of 358, 676.
+
+Document 5
+Title: Ellicott City, Maryland
+Content: ellicott city is an unincorporated community and census - designated place, along with being the county seat of local government in howard county, maryland, united states. it is part of the baltimore metropolitan area. the population was 65, 834 at the 2010 census. founded in 1772, the town contains the b. & o. railroad museum's branch at the ellicott city station, built in 1830 as the first terminus of the initial line. the downtown historic district is located in the valley of the small tiber river, with its east end abutting the patapsco river, which forms the baltimore county line. as of the 2000 census, ellicott city surpassed towson ( county seat of neighboring baltimore county ) for the first time, as the largest unincorporated county seat in the country.
+
+Document 6
+Title: Baraki Barak District
+Content: baraki"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,17,A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?,384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.7356812000507489,0.13977549999253824,0.3840467000263743,1.2595034000696614,684,6,690,Francis McPeake,Francis McPeake,"[""A Pair of Brown Eyes"", ""Wild Mountain Thyme"", ""A Spanner in the Works"", ""Beautiful Brown Eyes"", ""Brown Eyes (song)"", ""Brown Eyes (band)"", ""Caramel (City High song)""]","[""A Pair of Brown Eyes"", ""Wild Mountain Thyme"", ""A Spanner in the Works"", ""Beautiful Brown Eyes""]","Document 1
+Title: A Pair of Brown Eyes
+Content: "" a pair of brown eyes "" is a single by the pogues, released on 18 march 1985. the single was their first to make the uk top 100, peaking at number 72. it featured on the band's second album, "" rum sodomy & the lash "", and was composed by pogues front man shane macgowan, on the melody of "" wild mountain thyme "", also known as "" will ye go lassie go, "" a song by francis mcpeake in a traditional irish folk style.
+
+Document 2
+Title: Wild Mountain Thyme
+Content: "" wild mountain thyme "" ( also known as "" purple heather "" and "" will ye go, lassie, go? "" ) is a scottish folk song that was collected by francis mcpeake 1st, who wrote the song himself for his wife. the mcpeake family claim recognition for the writing of the song. francis mcpeake is a member of a well known musical family in belfast, northern ireland. the lyrics and melody are a variant of the song "" the braes of balquhither "" by scottish poet robert tannahill ( 1774 – 1810 ), a contemporary of robert burns. tannahill's original song, first published in robert archibald smith's "" scottish minstrel "" ( 1821 – 24 ), is about the hills ( "" braes "" ) around balquhidder near lochearnhead. like burns, tannahill collected and adapted traditional songs, and "" the braes of balquhither "" may have been based on the traditional song "" the braes o'bowhether "".
+
+Document 3
+Title: A Spanner in the Works
+Content: the album includes covers of bob dylan's "" sweetheart like you "" and the blue nile's "" the downtown lights "". the song "" muddy, sam, and otis "", is his tribute to muddy waters, sam cooke, and otis redding. track 12, later released as a single featuring the scottish euro'96 football squad, "" purple heather "" is a folk song that normally goes by the name "" wild mountain thyme "". it is often credited as traditional, but was written by the mcpeakes. "" leave virginia alone "" was written by tom petty and recorded for his album "" wildflowers "", but was left off the finished album and given to stewart instead.
+
+Document 4
+Title: Beautiful Brown Eyes
+Content: "" beautiful brown eyes "" is a traditional country song"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,18,Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.33088050002697855,0.1253595000016503,0.4190449999878183,0.8752850000164472,695,6,701,Slaughterhouse-Five,Slaughterhouse-Five,"[""Armageddon in Retrospect"", ""Kurt Vonnegut"", ""Hugh Gallagher (humorist)"", ""Little Big Man (novel)"", ""Claudia Durst Johnson"", ""Satyricon"", ""Jaroslav Hašek""]","[""Armageddon in Retrospect"", ""Kurt Vonnegut"", ""Hugh Gallagher (humorist)"", ""Little Big Man (novel)"", ""Claudia Durst Johnson""]","Document 1
+Title: Armageddon in Retrospect
+Content: armageddon in retrospect is a collection of short stories and essays about war and peace written by kurt vonnegut. it is the first posthumous collection of his previously unpublished writings. the book includes an introduction by mark vonnegut, a letter from kurt to his family about his experiences as an american prisoner of war in nazi germany, and the fire - bombing of dresden. like many of vonnegut's other books, "" armageddon in retrospect "" is laden with handwritten quotations and rough drawings by the author.
+
+Document 2
+Title: Kurt Vonnegut
+Content: kurt vonnegut jr. ( ; november 11, 1922april 11, 2007 ) was an american writer. in a career spanning over 50 years, vonnegut published 14 novels, three short story collections, five plays, and five works of non - fiction. he is most famous for his darkly satirical, best - selling novel "" slaughterhouse - five "" ( 1969 ).
+
+Document 3
+Title: Hugh Gallagher (humorist)
+Content: hugh gallagher is an author and musician from new york city. he is best known for his satire, including his band von von von, his award - winning satire on the college application essay, "" 3a essay "", and the novel "" teeth "".
+
+Document 4
+Title: Little Big Man (novel)
+Content: little big man is a 1964 novel by american author thomas berger. often described as a satire or parody of the western genre, the book is a modern example of picaresque fiction. berger made use of a large volume of overlooked first - person primary materials, such as diaries, letters, and memoirs, to fashion a wide - ranging and entertaining tale that comments on alienation, identity, and perceptions of reality. easily berger's best known work, "" little big man "" was made into a popular film by arthur penn. it has been called "" berger's response to the great american myth of the frontier, representing as it does most of the central traditions of american literature. ""
+
+Document 5
+Title: Claudia Durst Johnson
+Content: claudia durst johnson is a literary scholar best known for her work on the novel "" to kill a mockingbird "", introducing the idea of the novel's gothicism and gothic satire. in the process of her research she befriended the author, harper lee. when the city of chicago organized a one city one book program in 2001 based on "" to kill a mockingbird "", lee was unavailable"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,19,What class of instrument does Apatim Majumdar play?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,1.0,1.0,1.0441423000302166,0.2070098000112921,0.3267187000019476,1.5778708000434563,643,3,646,strings,sarod,"[""Apratim Majumdar"", ""Udaka vadya"", ""Sarod"", ""Experimental musical instrument"", ""Sousaphone"", ""Keyboard glockenspiel"", ""Bukkehorn""]","[""Apratim Majumdar"", ""Udaka vadya"", ""Sarod"", ""Experimental musical instrument"", ""Sousaphone""]","Document 1
+Title: Apratim Majumdar
+Content: apratim majumdar ( born 1978 ), is an indian classical musician from kolkata, india. he plays the sarod. his "" dhrupadee veenkar "" style of ustad alauddin khan's seni veenkar gharana : analytically imaginative prosodic progression with metrical waves of melodic phrases interwoven with highest order of technical brilliance and maturity reminds the great legends of the gharana. he is an internationally recognized instructor of classical indian music.
+
+Document 2
+Title: Udaka vadya
+Content: udaka vadya is an indian musical instrument. it is assumed either this musical instruments had been jal tarang or similar to it. this percussion instrument has been categorized in medieval musical treatise under ghan vadya ( diophonic instruments where the sound is produced by striking a surface ). this instrument has been mentioned in vatsyayana's kamasutra, also sangeeta parijata of the 17th century mentioned about this instrument. the skill to play this instrument was one of the essential 64 kala to be learnt by a woman.
+
+Document 3
+Title: Sarod
+Content: the sarod ( or sarode ) ( सरोद ) is a stringed instrument of india, used mainly in indian classical music. along with the sitar, it is among the most popular and prominent instruments in hindustani classical music. the sarod is known for a deep, weighty, introspective sound, in contrast with the sweet, overtone - rich texture of the sitar, with sympathetic strings that give it a resonant, reverberant quality. it is a fretless instrument able to produce the continuous slides between notes known as meend ( glissandi ), which are important in indian music.
+
+Document 4
+Title: Experimental musical instrument
+Content: an experimental musical instrument ( or custom - made instrument ) is a musical instrument that modifies or extends an existing instrument or class of instruments, or defines or creates a new class of instrument. some are created through simple modifications, such as cracked drum cymbals or metal objects inserted between piano strings in a prepared piano. some experimental instruments are created from household items like a homemade mute for brass instruments such as bathtub plugs. other experimental instruments are created from electronic spare parts, or by mixing acoustic instruments with electric components.
+
+Document 5
+Title: Sousaphone
+Content: the sousaphone ( ), is a brass instrument in the"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,20," Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.503953899955377,0.11236359999747947,0.3775634000194259,0.9938808999722824,712,6,718,Ride a Wild Pony,Ride a Wild Pony,"[""The Many Adventures of Winnie the Pooh"", ""Ride a Wild Pony"", ""Winnie the Pooh and the Blustery Day"", ""The Wonderful Thing About Tiggers"", ""A Valentine for You"", ""The Wild Pony"", ""Up, Down and Touch the Ground""]","[""The Many Adventures of Winnie the Pooh"", ""Ride a Wild Pony"", ""Winnie the Pooh and the Blustery Day"", ""The Wonderful Thing About Tiggers""]","Document 1
+Title: The Many Adventures of Winnie the Pooh
+Content: the many adventures of winnie the pooh is a 1977 american animated film produced by walt disney productions and distributed by buena vista distribution. it is the 22nd disney animated feature film and was first released on march 11, 1977 on a double bill with "" the littlest horse thieves "".
+
+Document 2
+Title: Ride a Wild Pony
+Content: ride a wild pony is a 1975 american - australian family adventure film produced by walt disney productions, directed by don chaffey and based on the novel "" a sporting proposition "" by james aldridge.
+
+Document 3
+Title: Winnie the Pooh and the Blustery Day
+Content: winnie the pooh and the blustery day is a 1968 animated featurette based on the third, fifth, ninth, and tenth chapters from "" winnie - the - pooh "" and the second, eighth, and ninth chapters from "" the house at pooh corner "" by a. a. milne. the featurette was produced by walt disney productions and released by buena vista distribution company on december 20, 1968 as a double feature with "" the horse in the gray flannel suit "". this was the second of the studio's winnie the pooh shorts. it was later added as a segment to the 1977 film "" the many adventures of winnie the pooh "". the music was written by richard m. sherman and robert b. sherman. it was notable for being the last animated short produced by walt disney, who died during its production.
+
+Document 4
+Title: The Wonderful Thing About Tiggers
+Content: "" the wonderful thing about tiggers "" is the theme song and personal anthem of tigger, a fictional tiger from the children's book series winnie - the - pooh. although tigger's birthday is believed to be in october 1928, the year that "" the house at pooh corner "" was first published, on tigger - related merchandise, disney often indicates tigger's birth year as 1968, a reference to the first year that tigger appeared in a disney production, "" winnie the pooh and the blustery day "". that was also the same instance when tigger first sang this song. the song is repeated in disney's 1974 release "" winnie the pooh and tigger too! "", the many adventures of winnie the pooh ride and then again in the 1977 release "" the many adventures of winnie the pooh "". "" the wonderful thing about tiggers "" opens up the 2000 release of """
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,21,Pandikona and Berger Blanc Suisse are both what kinds of animals?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,1.0,1.0,0.7320594000048004,0.12639629998011515,0.3566337999654934,1.215089499950409,658,5,663,dogs,Insufficient information.,"[""Berger Blanc Suisse"", ""Pandikona"", ""African buffalo"", ""Segugio Italiano"", ""Progression of Animals"", ""Pieris (butterfly)"", ""Sinopieris""]","[""Berger Blanc Suisse"", ""Pandikona"", ""African buffalo"", ""Segugio Italiano"", ""Progression of Animals""]","Document 1
+Title: Berger Blanc Suisse
+Content: the berger blanc suisse ( english : white swiss shepherd, german : "" weisser schweizer schaferhund "", italian : "" pastore svizzero bianco "" ) is a breed of dog from switzerland. it is of the same origins as the white shepherd and the german shepherd dog, and has been recognized as a separate breed by the fci.
+
+Document 2
+Title: Pandikona
+Content: the pandikona is a primitive - type hunting dog from pattikonda taluk - kurnool district of andhra pradesh and madhya pradesh state, india. "" pandikona "" is a medium size sight hound which is adapted to harsh climatic conditions of kurnool district. this breed is associated with shepherd families of that region. pandikona dogs need very little care.
+
+Document 3
+Title: African buffalo
+Content: the african buffalo or cape buffalo ( "" syncerus caffer "" ) is a large african bovine. it is not closely related to the slightly larger wild water buffalo of asia and its ancestry remains unclear. "" syncerus caffer caffer "", the cape buffalo, is the typical subspecies, and the largest one, found in south and east africa. "" s. c. nanus "" ( african forest buffalo ) is the smallest subspecies, common in forest areas of central and west africa, while "" s. c. brachyceros "" is in west africa and "" s. c. aequinoctialis "" is in the savannas of east africa. the adult buffalo's horns are its characteristic feature ; they have fused bases, forming a continuous bone shield across the top of the head referred to as a "" boss "". they are widely regarded as very dangerous animals, as they gore and kill over 200 people every year.
+
+Document 4
+Title: Segugio Italiano
+Content: the segugio italiano ] is an italian breed of dog of the scenthound family. it comes in both short - haired and wire - haired varieties. it is thought to be an ancient breed, descended in pre - roman eras from progenitor scenthounds in ancient egypt. in 2009 enci ( the italian kennel club ) registered 4, 500 specimens of the short - haired variety and 1, 740 wire - haired specimens, making this one of the top ten breeds in italy.
+
+Document 5
+Title: Progression of Animals
+Content: progression of animals ( or "" on the gait of animals "" ; greek :"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,22,The Prussian General Carl von Clausewitz is associated with what type of realism?,384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,0.0,0.33333333333333337,1.0,1.0,0.7736776000238024,0.1287498000310734,0.3676475000102073,1.270074900065083,707,4,711,Modern thinkers associated with classical realism are Carl von Clausewitz,Classical realism,"[""Carl von Clausewitz"", ""Classical realism (international relations)"", ""On War"", ""Absolute war"", ""August Otto Rühle von Lilienstern"", ""Christopher Bassford"", ""Panzer Division Clausewitz""]","[""Carl von Clausewitz"", ""Classical realism (international relations)"", ""On War"", ""Absolute war""]","Document 1
+Title: Carl von Clausewitz
+Content: carl philipp gottfried ( or gottlieb ) von clausewitz ( ; 1 june 1780 – 16 november 1831 ) was a prussian general and military theorist who stressed the "" moral "" ( meaning, in modern terms, psychological ) and political aspects of war. his most notable work, "" vom kriege "" ( "" on war "" ), was unfinished at his death.
+
+Document 2
+Title: Classical realism (international relations)
+Content: classical realism is a theory of international relations established in the post - world war ii era that seeks to explain international politics as a result of human nature. the theory is associated with thinkers such as niccolo machiavelli and thomas hobbes. modern thinkers associated with classical realism are carl von clausewitz, hans morgenthau and reinhold niebuhr. classical realist thought has since been overshadowed by neorealism after kenneth waltz'work became more widely accepted due to the rise of structuralism in north american international relations scholarship which favored the latter's emphasis on rationality rather than human nature as cause for political conflict.
+
+Document 3
+Title: On War
+Content: vom kriege ( ] ) is a book on war and military strategy by prussian general carl von clausewitz ( 1780 – 1831 ), written mostly after the napoleonic wars, between 1816 and 1830, and published posthumously by his wife marie von bruhl in 1832. it has been translated into english several times as on war. "" on war "" is actually an unfinished work ; clausewitz had set about revising his accumulated manuscripts in 1827, but did not live to finish the task. his wife edited his collected works and published them between 1832 and 1835. his 10 - volume collected works contain most of his larger historical and theoretical writings, though not his shorter articles and papers or his extensive correspondence with important political, military, intellectual and cultural leaders in the prussian state. "" on war "" is formed by the first three volumes and represents his theoretical explorations. it is one of the most important treatises on political - military analysis and strategy ever written, and remains both controversial and an influence on strategic thinking.
+
+Document 4
+Title: Absolute war
+Content: the concept of absolute war was a theoretical construct developed by the prussian military theorist general carl von clausewitz in his famous but unfinished philosophical exploration of war, "" vom kriege "" ( in english, "" on war "", 1832 ). it is discussed only in the first half of book viii ( there are only a couple of"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,23,What where both Hawker Hurricane and No. 1455 Flight apart of?,384,96,7,20,0.2,512,dense,True,20,20,7,7,512,qwen2.5:3b,0.0,0.0,1.0,1.0,0.4984608999802731,0.09584409999661148,0.5200199999962933,1.114324999973178,773,12,785,Royal Air Force,No. 1455 ( fighter ) flight,"[""No. 1455 Flight RAF"", ""No. 1300 Flight RAF"", ""Hawker Hurricane"", ""Flying Legend Hawker Hurricane Replica"", ""Hawker Typhoon"", ""Hawker Tornado"", ""Battle of Britain Memorial Flight""]","[""No. 1455 Flight RAF"", ""No. 1300 Flight RAF"", ""Hawker Hurricane"", ""Flying Legend Hawker Hurricane Replica"", ""Hawker Typhoon"", ""Hawker Tornado"", ""Battle of Britain Memorial Flight""]","Document 1
+Title: No. 1455 Flight RAF
+Content: no. 1455 ( fighter ) flight was formed at raf tangmere, west sussex on 7 july 1941, equipped with turbinlite douglas boston and douglas havoc aircraft. on operations they co - operated with the hawker hurricanes of 1 squadron and 3 squadron. the flight was replaced with 534 squadron on 2 september 1942.
+
+Document 2
+Title: No. 1300 Flight RAF
+Content: no. 1300 ( meteorological ) flight was formed on 31 july 1943 at raf alipore, west bengal, british india, by re - designating no. 1 meteorological flight raf. the flight, strength of which had been reduced to three hawker hurricane mk. iis by this time, was disbanded on 30 may 1946 at raf kallang, malaya, as no. 1300 ( meteorological thum ) flight, thum standing for temperature and humidity.
+
+Document 3
+Title: Hawker Hurricane
+Content: the hawker hurricane is a british single - seat fighter aircraft of the 1930s – 1940s that was designed and predominantly built by hawker aircraft ltd for the royal air force ( raf ). although overshadowed by the supermarine spitfire, the aircraft became renowned during the battle of britain, accounting for 60 percent of the raf air victories in the battle, and served in all the major theatres of the second world war.
+
+Document 4
+Title: Flying Legend Hawker Hurricane Replica
+Content: the flying legend hawker hurricane replica is an italian light - sport aircraft, designed and produced by flying legend of caltagirone and introduced at the aero friedrichshafen show in 2011. the aircraft, a 72 % scale replica of the british hawker hurricane second world war fighter, is supplied as a kit for amateur construction or as a complete ready - to - fly - aircraft.
+
+Document 5
+Title: Hawker Typhoon
+Content: the hawker typhoon ( tiffy in raf slang ), is a british single - seat fighter - bomber, produced by hawker aircraft. it was intended to be a medium – high altitude interceptor, as a replacement for the hawker hurricane but several design problems were encountered and it never completely satisfied this requirement.
+
+Document 6
+Title: Hawker Tornado
+Content: the hawker tornado was a british single - seat fighter aircraft design of world war ii for the royal air force as a replacement for the hawker hurricane. the planned production of tornados was cancelled after the engine it was designed to use — the rolls - royce vulture — proved unreliable in service. a parallel airframe with the napier sabre continued into production as the hawker typhoon.
+
+Document 7
+Title: Battle of Britain Memorial Flight
+Content: the battle of"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,24,what language did the ethnic group which Torstein Ellingsen was its drumer  speaks ,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,1.0,1.0,1.5241029000026174,0.12825639999937266,0.48233869997784495,2.134697999979835,688,5,693,Norwegian language,Insufficient information.,"[""Torstein Ellingsen"", ""Ewe people"", ""Turkish people"", ""Norwegians"", ""Unrecognized ethnic groups in China"", ""Azerbaijanis"", ""Italian classical music""]","[""Torstein Ellingsen"", ""Ewe people"", ""Turkish people"", ""Norwegians"", ""Unrecognized ethnic groups in China""]","Document 1
+Title: Torstein Ellingsen
+Content: torstein ellingsen ( born 7 august 1966 ) is a norwegian drummer and music producer, known from a series of album recordings.
+
+Document 2
+Title: Ewe people
+Content: the ewe people ( ewe : "" eʋeawo "", lit. "" ewe people "" ; or "" eʋedukɔ "", lit. "" ewe nation "", "" eʋenyigba "" eweland ; ) are an african ethnic group. they are the largest ethnic group in togo ( 32 % ), the third largest ethnic group in ghana ( 14 % ), and are a minority ethnic group in southern benin, ivory coast and nigeria. they speak the ewe language ( ewe : "" eʋegbe "" ) which belongs to the niger - congo family of languages. they are related to other speakers of gbe languages, such as, the fon, gen, phla phera, and the aja people of togo and benin.
+
+Document 3
+Title: Turkish people
+Content: turkish people ( turkish : "" turk ulusu "" ), or the turks ( turkish : "" turkler "" ), also known as anatolian turks ( turkish : "" anadolu turkleri "" ), are a turkic ethnic group and nation living mainly in turkey and speaking turkish, the most widely spoken turkic language. they are the largest ethnic group in turkey, as well as by far the largest ethnic group among the speakers of turkic languages. ethnic turkish minorities exist in the former lands of the ottoman empire. in addition, a turkish diaspora has been established with modern migration, particularly in western europe.
+
+Document 4
+Title: Norwegians
+Content: norwegians ( norwegian : "" nordmenn "" ) are a germanic ethnic group native to norway. they share a common culture and speak the norwegian language. norwegian people and their descendants are found in migrant communities worldwide, notably in the united states, canada, australia, argentina, chile, uruguay, brazil, mexico, new zealand, united kingdom and south africa.
+
+Document 5
+Title: Unrecognized ethnic groups in China
+Content: several ethnic groups of the people's republic of china are not officially recognized. taken together, these groups ( 民 "" wei shibie minzu ) "" number more than 730, 000 people ; if considered as a single group, they would constitute the twentieth most populous ethnic group of china. some scholars have estimated that there are over 200 distinct ethnic groups that inhabit china. there are in addition"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,25,"From March 631 to April 631, Farrukhzad Khosrau V was the king of an empire that succeeded which empire?",384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.5,1.0,1.0,1.1981649000081234,0.09580120001919568,1.2145215999917127,2.5084877000190318,705,5,710,the Parthian Empire,Sasanian Empire,"[""Farrukhzad Khosrow V"", ""Hormizd VI"", ""Khosrow IV"", ""Suintila"", ""Ashur-etil-ilani"", ""Duchy of Thuringia"", ""Sasanian Empire""]","[""Farrukhzad Khosrow V"", ""Hormizd VI"", ""Khosrow IV"", ""Suintila"", ""Ashur-etil-ilani"", ""Sasanian Empire""]","Document 1
+Title: Farrukhzad Khosrow V
+Content: farrukhzad khosrau v was briefly king of the sasanian empire from march 631 to april 631. he was the son of khosrau ii.
+
+Document 2
+Title: Hormizd VI
+Content: hormizd vi ( persian : هرمز ) was a sasanian king of parts of persia from 630 to 631. he was one of the many pretenders who rose after the murder of khosrau ii ( 590 – 628 ) in 628. he maintained himself about two years ( 630 – 632 ) in the district of nisibis. he was the grandson of khosrau ii.
+
+Document 3
+Title: Khosrow IV
+Content: khosrow iv was a sasanian usurper who ruled briefly in 631. little is known about his rule, he appears to have ruled during a time of upheaval and chaos across the sasanian empire the 7th century has the century where iran has plunged into its "" dark ages "". he was the son of mah - adhur gushnasp, who was the minister of the sasanian empire during the reign of ardashir iii, and kahar - dukht, the daughter of yazdandar, who was the son of khosrau i. his rule seems to coincide with other pretenders such as hormizd vi so it is likely that he ruled a district or province rather than the empire in its entirety. he was killed after a few days of reign.
+
+Document 4
+Title: Suintila
+Content: suintila, or "" swinthila "", "" svinthila "" ; ( ca. 588 – 633 / 635 ) was visigothic king of hispania, septimania and galicia from 621 to 631. there was a new peace in the kingdom of the visigoths. as a direct result, by 624 the king was able to retake those lands that had been under the control of the byzantine empire. he was a son of reccared i and wife bado, and a brother of the general geila.
+
+Document 5
+Title: Ashur-etil-ilani
+Content: ashur - etil - ilani was a king of assyria ( c. 631 bc – c. 627 bc ). he succeeded his father ashurbanipal.
+
+Document 6
+Title: Sasanian Empire
+Content: the"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,26,"Beer Wars covers the differences between large corporate breweries, and small breweries, such as what brewery that is headquartered in Escondido, california?",384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.8,1.0,1.0,1.4286717000068165,0.06728749995818362,0.8673962999600917,2.363355499925092,652,5,657,Stone Brewing,Stone Brewing Co.,"[""Beer Wars"", ""Microbrewery"", ""List of breweries in California"", ""Stone Brewing Co."", ""Beer by region"", ""List of microbreweries"", ""Brouwerij 't IJ""]","[""Beer Wars"", ""Microbrewery"", ""List of breweries in California"", ""Stone Brewing Co."", ""Beer by region"", ""List of microbreweries""]","Document 1
+Title: Beer Wars
+Content: beer wars is a 2009 documentary film about the american beer industry. in particular, it covers the differences between large corporate breweries, namely anheuser - busch, the miller brewing company, and the coors brewing company opposed to smaller breweries like dogfish head brewery, moonshot 69, yuengling, stone brewing co., and other producers of craft beer. also covered is how advertising and lobbyists are used to control the beer market, implying that these things harm competition and consumer choice.
+
+Document 2
+Title: Microbrewery
+Content: a microbrewery or craft brewery is a brewery that produces small amounts of beer ( or sometimes root beer ), typically much smaller than large - scale corporate breweries, and is independently owned. such breweries are generally characterized by their emphasis on quality, flavour and brewing technique.
+
+Document 3
+Title: List of breweries in California
+Content: this list of breweries in california, both current and defunct, includes both microbreweries and larger industrial scale breweries. brewing companies range widely in the volume and variety of beer produced, ranging from small breweries to massive multinational conglomerates. since 1983, california has allowed breweries to sell beer on their premises, giving rise to numerous brewpubs and microbreweries.
+
+Document 4
+Title: Stone Brewing Co.
+Content: stone brewing is a brewery headquartered in escondido, california, usa. founded in 1996 in san marcos, california, it is the largest brewery in southern california. based on 2016 sales volume it is the ninth largest craft brewery in the united states.
+
+Document 5
+Title: Beer by region
+Content: this is a list of articles and categories dealing with beer by region, including breweries and brewing in general. beer is the world's most widely consumed alcoholic beverage, and is the third - most popular drink overall, after water and tea. it is thought by some to be the oldest fermented beverage. a brewery is a dedicated building for the making of beer, though beer can be made at home, and has been for much of beer's history. a company that makes beer is called either a brewery or a brewing company. the diversity of size in breweries is matched by the diversity of processes, degrees of automation, and kinds of beer produced in breweries. a brewery is typically divided into distinct sections, with each section reserved for one part of the brewing process.
+
+Document 6
+Title: List of microbreweries
+Content: this is a list of notable"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,27,"Which head coach has led their team for a longer period of time, Tim Cluess or Steve Prohm?",384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,0.5,0.5,1.3201314000179991,0.09986529999878258,0.9888285999768414,2.408825299993623,790,5,795,Tim Cluess,Insufficient information.,"[""David Hobbs (basketball)"", ""2012–13 Murray State Racers men's basketball team"", ""2015–16 Iowa State Cyclones men's basketball team"", ""Garry St. Jean"", ""Josh Holliday"", ""Mike Gundy"", ""1995–96 Atlanta Hawks season""]","[""David Hobbs (basketball)"", ""2012–13 Murray State Racers men's basketball team"", ""2015–16 Iowa State Cyclones men's basketball team"", ""Garry St. Jean"", ""Josh Holliday""]","Document 1
+Title: David Hobbs (basketball)
+Content: david a. hobbs ( born april 25, 1949 ) is an american basketball coach. hobbs currently serves as a special assistant to iowa state's head coach steve prohm. he was the men's head coach at the university of alabama from 1992 to 1998 and also was an assistant coach at alabama, the university of kentucky and virginia commonwealth university.
+
+Document 2
+Title: 2012–13 Murray State Racers men's basketball team
+Content: the 2012 – 13 murray state racers men's basketball team represented murray state university during the 2012 – 13 ncaa division i men's basketball season. the racers, led by second year head coach steve prohm, played their home games at the cfsb center and were members of the west division of the ohio valley conference. they finished the season 21 – 10, 10 – 6 in ovc play to be champions of the west division. they advanced to the championship game of the ovc tournament where they lost to belmont in overtime. despite the 21 wins, they did not participate in a post season tournament.
+
+Document 3
+Title: 2015–16 Iowa State Cyclones men's basketball team
+Content: the 2015 – 16 iowa state cyclones men's basketball team represents iowa state university during the 2015 – 16 ncaa division i men's basketball season. the cyclones were coached by steve prohm, who was in his 1st season. they played their home games at hilton coliseum in ames, iowa and competed in the big 12 conference.
+
+Document 4
+Title: Garry St. Jean
+Content: garry st. jean ( born february 10, 1950 in chicopee, massachusetts ) is an american former professional basketball coach and executive. st. jean was head coach of the sacramento kings from 1992 through 1997. he later became the general manager of the golden state warriors, and in 1999 – 2000 he doubled as a head coach after p. j. carlesimo was fired. st. jean was a pro scout for the new jersey nets in the 2010 – 11 season. he has been an in - studio analyst for golden state warriors coverage on comcast sportsnet bay area since the start of the 2011 - 2012 season.
+
+Document 5
+Title: Josh Holliday
+Content: josh holliday ( born september 14, 1976 ) is an american college baseball coach and former professional player in minor league baseball. currently the head coach of the oklahoma state cowboys baseball team, he was hired to this position prior to the 2013 season. in 2014, holliday was the big 12 conference baseball coach of the"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,28,During what war were the Russia-United Kingdom relations in a state of rivalry after the abdication of Emperor Nicholas II? ,384,96,7,20,0.2,512,dense,True,20,20,7,3,510,qwen2.5:3b,0.0,0.4,1.0,1.0,1.5853608999750577,0.13391299999784678,0.5072968999738805,2.226570799946785,711,7,718,the Cold War (1947–91),Russo-Japanese War,"[""Russia–United Kingdom relations"", ""Nicholas II of Russia"", ""Russian Revolution"", ""Charles Sydney Gibbes"", ""Grand Duke Vladimir Alexandrovich of Russia"", ""Grand Duke Sergei Alexandrovich of Russia"", ""October Manifesto""]","[""Russia–United Kingdom relations"", ""Nicholas II of Russia"", ""Russian Revolution""]","Document 1
+Title: Russia–United Kingdom relations
+Content: the russia – united kingdom relations ( russian : россииско - британские отношения ) is the relationship between the russian federation and the united kingdom of great britain and northern ireland and it's overseas territories. spanning nearly five centuries, it has often switched from a state of alliance to rivalry or even war. the russians and british were allies against napoleon, and enemies in the crimean war of the 1850s, and rivals in the great game for control of central asia in the late 19th century. they were allies again in world wars i and ii, although relations were strained by the russian revolution of 1917. they were at sword's point during the cold war ( 1947 – 91 ). russian big businesses had strong connections with the city of london and british corporations during the late 1990s and 2000s.
+
+Document 2
+Title: Nicholas II of Russia
+Content: nicholas ii or nikolai ii ( russian : николаи ii александрович, "" nikolay ii aleksandrovich "" ; 18 may [ o. s. 6 may ] 1868 – 17 july 1918 ) was the last emperor of russia, ruling from 1 november 1894 until his forced abdication on 15 march 1917. his reign saw the fall of the russian empire from being one of the foremost great powers of the world to economic and military collapse. due to the khodynka tragedy, anti - semitic pogroms, bloody sunday, the violent suppression of the 1905 revolution, the execution of political opponents and his perceived responsibility for the russo - japanese war, he was given the nickname nicholas the bloody by his political adversaries. soviet historiography portrayed nicholas as a weak and incompetent leader, whose decisions led to military defeats and the deaths of millions of his subjects.
+
+Document 3
+Title: Russian Revolution
+Content: the russian revolution was a pair of revolutions in russia in 1917 which dismantled the tsarist autocracy and led to the rise of the soviet union. the russian empire collapsed with the abdication of emperor nicholas ii and the old regime was replaced by a provisional government during the first revolution of february 1917 ( march in the gregorian calendar ; the older julian calendar was in use in russia at the time ). alongside it arose grassroots community assemblies ( called'soviets') which contended for authority. in the second revolution that october, the provisional government was toppled and all power was given to the soviets."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,29,How far from Sacramento is the flight school in Atwater?,384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.5714285714285715,1.0,1.0,1.2054950000019744,0.1241605999530293,0.8716098999720998,2.2012654999271035,715,5,720,about 115 miles (185 km),115 miles,"[""Sierra Academy of Aeronautics"", ""Castle Air Force Base"", ""Pacific Flying Club"", ""American Flyers (flight school)"", ""Huffman Aviation"", ""North American Institute of Aviation"", ""ATP Flight School""]","[""Sierra Academy of Aeronautics"", ""Castle Air Force Base"", ""Pacific Flying Club"", ""American Flyers (flight school)"", ""Huffman Aviation"", ""North American Institute of Aviation""]","Document 1
+Title: Sierra Academy of Aeronautics
+Content: the sierra academy of aeronautics is an aviation flight school headquartered in atwater, california. it operates its training facility at the former castle air force base in atwater, california. sierra academy is also contracted by several foreign air carriers to perform pilot training, including shanghai airlines.
+
+Document 2
+Title: Castle Air Force Base
+Content: castle air force base ( 1941 – 1995 ) is a former united states air force strategic air command base located northeast of atwater, northwest of merced and about 115 miles ( 185 km ) south of sacramento, california.
+
+Document 3
+Title: Pacific Flying Club
+Content: the pacific flying club is a flight school based out of boundary bay airport in delta, british columbia. it is the largest flight school on the west coast of canada. the pacific flying club was formed on july 14, 1965. in 2015 pacific flying club will be celebrating its 50th anniversary by hosting the webster memorial trophy competition.
+
+Document 4
+Title: American Flyers (flight school)
+Content: american flyers is an american flight school. it is the oldest flight training school in the united states, having been founded at midway airport in 1939 by reed pigman. in 1980 the flight school chain aviation training enterprises, a. t. e, acquired american flyers. the company operates a chain of facilities at airports all across the united states. american flyers produces more instrument - rated pilots than any other school in the nation. previously based in west chicago, illinois, in a building that has now been taken over by the avel flight school, american flyers has nine locations across the united states providing flight training to domestic and international students. an faa - approved part 141 school, american flyers offers a 6 months program that uses a rigid training course syllabus and standardized instructors.
+
+Document 5
+Title: Huffman Aviation
+Content: huffman aviation was a flight - training school in venice, florida at venice municipal airport this flight school has no affiliation with a flight school in texas with the same name.
+
+Document 6
+Title: North American Institute of Aviation
+Content: the north american institute of aviation ( naia ) was a private, faa part - 141 flight school located in conway, south carolina, in the united states. founded on july 7, 1972 in hammonton, new jersey, then later moved to south carolina in 1978, naia specialized in flight and aircraft maintenance training. it has also had a campus in las cruces, new mexico. the school had close connections to north european aviation resources ( near ) of vigra, norway, and was for a"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,30,Baraki Barak District is situated in the western part of a province whose capital is what?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,0.5,0.5,0.9342359000002034,0.15801070001907647,1.2691026999964379,2.3613493000157177,692,3,695,Puli Alam,Logar,"[""Baraki Barak District"", ""Baraki Barak"", ""Baraki Rajan"", ""Baraki Barak airstrike"", ""Mahsud"", ""Camptown (country subdivision)"", ""Lunda Norte Province""]","[""Baraki Barak District"", ""Baraki Barak"", ""Baraki Rajan"", ""Baraki Barak airstrike"", ""Mahsud""]","Document 1
+Title: Baraki Barak District
+Content: baraki barak district is situated in the western part of logar province, afghanistan. it borders wardak province to the west and northwest, pul - i - alam district to the north and east and kharwar and charkh districts to the south. the population is 101, 000 ( 2006 ). the district center is the town of baraki barak - the former provincial capital, located in the northern part of the district in the valley of the logar river. baraki rajan is another important town of this district which lies 4 km away from district center.
+
+Document 2
+Title: Baraki Barak
+Content: baraki barak is a town and the center of baraki barak district, logar province, afghanistan. it was also the former capital of logar province. the town is in a mountainous area in the valley of the logar river. the main road ghazni - kabul passes about 20 km to the west of the town.
+
+Document 3
+Title: Baraki Rajan
+Content: baraki rajan ( dari / pashtun : برکی راجان ) is a town within the baraki barak district of logar province, afghanistan. baraki rajan lies approximately 3 km south of the town of baraki barak, the capital of the baraki barak district. baraki rajan is the location of the largest bazaar in the baraki barak district, with over 1, 200 shops and businesses, with a 50 + bed hospital near the town center, making baraki rajan an important center for commerce within the district.
+
+Document 4
+Title: Baraki Barak airstrike
+Content: the baraki barak airstrike was a coalition airstrike that occurred on august 26, 2011 in eastern afghanistan. six afghan civilians from the same family were killed in the air strike in the baraki barak district of logar province, afghanistan. four insurgents and three afghan army members were also killed.
+
+Document 5
+Title: Mahsud
+Content: the maseed, mahsud ( pashto : مسید ، محسود ), also spelled masid ( pashto : ماسيد ), is a karlani pashtun tribe inhabiting parts of the south waziristan agency in federally administered tribal areas of pakistan. a number of maseed lineages are settled in the logar province of afghanistan, especially in charkh district, baraki barak and muhammad agha, but also in wardak"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,31,What was the 2010 population of the town where Black Crescent Mountain was located? ,384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.0,0.5,0.5,2.1343970999587327,0.15670529997441918,0.51136669999687,2.802469099930022,769,5,774,310,Insufficient information.,"[""Black Crescent Mountain"", ""Crescent Mills, California"", ""Mount Crescent"", ""Crescent Range"", ""Mount Vernon, Indiana"", ""Enfield, North Carolina"", ""Santa Cruz (Santiago)""]","[""Black Crescent Mountain"", ""Crescent Mills, California"", ""Mount Crescent"", ""Crescent Range"", ""Mount Vernon, Indiana"", ""Enfield, North Carolina""]","Document 1
+Title: Black Crescent Mountain
+Content: black crescent mountain is a mountain in the crescent range of the white mountains, 4. 4 mi north of randolph and 4. 7 mi southwest of berlin in new hampshire. the summit is on the eastern boundary of the white mountain national forest.
+
+Document 2
+Title: Crescent Mills, California
+Content: crescent mills ( formerly, crescent city and crescent ) is a census - designated place ( cdp ) in plumas county, california, united states. crescent mills is located 3. 5 mi southeast of greenville. the population was 196 at the 2010 census, down from 258 at the 2000 census.
+
+Document 3
+Title: Mount Crescent
+Content: mount crescent is a mountain located in the crescent range of the white mountains in randolph, new hampshire. it is 3, 251 ft ( 991 m ) high, and its summit is the second highest mountain summit in randolph, after black crescent mountain ( 3, 264 feet, 995 m ). both mountains are in randolph's ice gulch town forest. on the 1896 topographic map, mount crescent is shown as "" randolph mtn. "" with an elevation of 3, 280 ft, and black crescent is shown as "" mt. crescent "" with an elevation of 3, 322 ft.
+
+Document 4
+Title: Crescent Range
+Content: the crescent range, sometimes referred to as the randolph mountains, is located in the white mountains of new hampshire in the united states. the highest peak in the range is black crescent mountain, with an elevation of 3264 ft.
+
+Document 5
+Title: Mount Vernon, Indiana
+Content: mount vernon is a city in and the county seat of posey county, indiana, united states. located in the state's far southwestern corner, within 15 miles of either the southernmost or westernmost points it is the westernmost city in the state, but not the southernmost, that being rockport, about 40 miles to the southeast. the population was 6, 687 at the 2010 census. it is located in black township and is part of the evansville, indiana, metropolitan area, which had a 2010 population of 358, 676.
+
+Document 6
+Title: Enfield, North Carolina
+Content: enfield is a town in halifax county, north carolina, and was founded in 1740. as of the 2010 united states census, the town ’ s population was 2, 532, which reflects an increase of almost 8 % from the population of 2, 347 at the 2000 census. it is the oldest town in halifax county, and it was once the world ’ s largest raw"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,32,"In the NASA mission where Moon trees were taken into space, what was the nickname of the Command Module?",384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.8988342999946326,0.11595669999951497,1.2707792000146583,2.285570200008806,730,4,734,"""Kitty Hawk""",Kitty Hawk,"[""Moon tree"", ""Apollo 9"", ""Stuart Roosa"", ""Apollo 16"", ""Apollo 8"", ""Apollo 12"", ""Apollo (spacecraft)""]","[""Moon tree"", ""Apollo 9"", ""Stuart Roosa"", ""Apollo 16"", ""Apollo 8""]","Document 1
+Title: Moon tree
+Content: moon trees are trees grown from 500 seeds taken into orbit around the moon by stuart roosa during the apollo 14 mission in 1971. as the command module pilot on the apollo 14 mission, and because he was a former smoke jumper, roosa was contacted by ed cliff, who was the chief of the forest service at the time, and who proposed the idea of taking the seeds along. seeds for the experiment were chosen from five different types of trees : loblolly pine, sycamore, sweetgum, redwood, and douglas fir.
+
+Document 2
+Title: Apollo 9
+Content: apollo 9 was the third manned mission in the united states apollo space program and the first flight of the command / service module ( csm ) with the lunar module ( lm, pronounced "" lem "" ). its three - person crew, consisting of commander james mcdivitt, command module pilot david scott, and lunar module pilot rusty schweickart, spent ten days in low earth orbit testing several aspects critical to landing on the moon, including the lm engines, backpack life support systems, navigation systems, and docking maneuvers. the mission was the second manned launch of a saturn v rocket.
+
+Document 3
+Title: Stuart Roosa
+Content: stuart allen "" stu "" roosa ( august 16, 1933 – december 12, 1994 ), ( col, usaf ), was an american aeronautical engineer, united states air force pilot, test pilot, and nasa astronaut, who was the command module pilot for the apollo 14 mission. the mission lasted from january 31 to february 9, 1971 and was the third mission to land astronauts ( alan shepard and edgar mitchell ) on the moon. while shepard and mitchell spent two days on the lunar surface, roosa conducted experiments from orbit in the command module "" kitty hawk "". he was one of only 24 people to travel to the moon.
+
+Document 4
+Title: Apollo 16
+Content: apollo 16 was the tenth manned mission in the united states apollo space program, the fifth and penultimate to land on the moon and the first to land in the lunar highlands. the second of the so - called "" j missions, "" it was crewed by commander john young, lunar module pilot charles duke and command module pilot ken mattingly. launched from the kennedy space center in florida at 12 : 54 pm est on april 16, 1972, the mission lasted 11 days, 1 hour, and 51 minutes, and concluded at 2 : 45 pm est on april 27.
+
+Document 5
+Title: Apollo 8
+Content: apollo"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,33,Which comic series involves characters such as Nick Fury and Baron von Strucker?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.0,1.0,1.0,1.1183825000189245,0.1653978999820538,0.9774815999553539,2.261261999956332,646,8,654,Marvel,Fenris (comics),"[""Fenris (comics)"", ""Nick Fury (2017 comic book)"", ""Nick Fury, Agent of S.H.I.E.L.D. (feature)"", ""Ultimate Nick Fury"", ""Nick Fury: Agent of S.H.I.E.L.D. (film)"", ""List of Nick Fury comics"", ""Nick Fury vs. S.H.I.E.L.D.""]","[""Fenris (comics)"", ""Nick Fury (2017 comic book)"", ""Nick Fury, Agent of S.H.I.E.L.D. (feature)"", ""Ultimate Nick Fury"", ""Nick Fury: Agent of S.H.I.E.L.D. (film)""]","Document 1
+Title: Fenris (comics)
+Content: andrea von strucker and andreas von strucker are two fictional characters appearing in american comic books published by marvel comics. they are the german twin children of supervillain baron von strucker of hydra and the half - siblings of werner von strucker.
+
+Document 2
+Title: Nick Fury (2017 comic book)
+Content: nick fury is a 2017 ongoing comic book series published by marvel comics. the series is written by james dale robinson and primarily drawn by aco. it is the first series to feature nick fury jr. as its main character.
+
+Document 3
+Title: Nick Fury, Agent of S.H.I.E.L.D. (feature)
+Content: nick fury, agent of s. h. i. e. l. d. was a feature on in the anthology comic "" strange tales "" it introduced the fictional spy agency s. h. i. e. l. d. into the marvel comics world and reintroduced the character of nick fury as an older character from his currently running series "" sgt. fury "", which was a wwii comic. the feature replaced the previously running human torch feature in the book and ran alongside the dr. strange feature. after the feature ended a comic title was published which has had several volumes as well as a comic strip.
+
+Document 4
+Title: Ultimate Nick Fury
+Content: general nicholas joseph "" nick "" fury is a fictional character appearing in comic books published by marvel comics'ultimate marvel section as a different version of nick fury or nick fury jr., his son and successor as director of s. h. i. e. l. d. he has a substantial presence in all the ultimate marvel comics, appearing first in "" ultimate marvel team - up "" and "" ultimate x - men "" and later reappearing regularly in "" ultimate spider - man "" and finally securing a regular, recurring role as the general of s. h. i. e. l. d. and the leader of the ultimates, a re - imagining of the avengers. this character was designed to look like samuel l. jackson, the actor who later went on to portray nick fury in several marvel movies and television shows set in the established marvel cinematic universe.
+
+Document 5
+Title: Nick Fury: Agent of S.H.I.E.L.D. (film)
+Content: nick fury : agent of s. h. i. e. l. d. is an american television film based on the marvel comics character nick fury. it was first broadcast on"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,34,College Humor is a 1933 American pre-Code musical comedy film that starred what American singer and actor who has a trademark warm bass-baritone voice?,384,96,7,20,0.2,512,dense,True,20,20,7,6,512,qwen2.5:3b,0.0,0.0,0.5,0.5,1.35656739998376,0.09531689999857917,0.8103254000307061,2.262209700013045,744,5,749,"Harry Lillis ""Bing"" Crosby Jr.",Insufficient information.,"[""College Humor (film)"", ""Hello, Everybody!"", ""Girl Without a Room"", ""International House (1933 film)"", ""My Lips Betray"", ""Sitting Pretty (1933 film)"", ""Melody Cruise (film)""]","[""College Humor (film)"", ""Hello, Everybody!"", ""Girl Without a Room"", ""International House (1933 film)"", ""My Lips Betray"", ""Sitting Pretty (1933 film)""]","Document 1
+Title: College Humor (film)
+Content: college humor is a 1933 american pre - code musical comedy film, directed by wesley ruggles, and starring bing crosby, jack oakie, richard arlen, mary kornman and mary carlisle. based on a story by dean fales, the film is about a college professor and the school's star football player who become rivals for the same beautiful coed. released by paramount pictures, the film co - stars george burns and gracie allen.
+
+Document 2
+Title: Hello, Everybody!
+Content: hello, everybody! is a 1933 american pre - code musical film directed by william a. seiter and written by lawrence hazard, fannie hurst and dorothy yost. the film stars kate smith, randolph scott, sally blane, charley grapewin, george barbier, wade boteler and julia swayne gordon. the film was released on february 17, 1933, by paramount pictures.
+
+Document 3
+Title: Girl Without a Room
+Content: girl without a room is a 1933 american pre - code musical comedy film starring charles farrell, charles ruggles, and marguerite churchill. this early light comedy farce set in paris was written by claude binyon, frank butler, and jack lait, and directed by ralph murphy.
+
+Document 4
+Title: International House (1933 film)
+Content: international house is a 1933 american pre - code comedy film starring peggy hopkins joyce and w. c. fields, directed by a. edward sutherland and released by paramount pictures. the tagline of the film was "" the grand hotel of comedy "". it is a mixture of comedy and musical acts tied together by a slim plot line, in the style of the big broadcast pictures that were also released by paramount during the 1930s. in addition to some typical comedic lunacy from w. c. fields and burns and allen, it provides a snapshot of some popular stage and radio acts of the era. the film includes some risque pre - code humor.
+
+Document 5
+Title: My Lips Betray
+Content: my lips betray is a 1933 american pre - code musical comedy film directed by john g. blystone and starring lilian harvey, john boles and el brendel. the film's sets were designed by the art director joseph c. wright.
+
+Document 6
+Title: Sitting Pretty (1933 film)
+Content: sitting pretty is a 1933 american pre - code musical comedy film telling the story of two aspiring, but untalented, songwriters, played by jack oakie and jack haley. they are joined by ginger rogers"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,35,Who is writing a book about the Koch family who control the second-largest privately owned company in the United States?,384,96,7,20,0.2,512,dense,True,20,20,7,4,503,qwen2.5:3b,0.0,0.0,1.0,0.5,1.5120032000122592,0.22346260002814233,0.505010700027924,2.2404765000683255,708,5,713,Jane Mayer,Insufficient information.,"[""Koch family"", ""Fred C. Koch"", ""Koch family foundations"", ""David Koch"", ""Dark Money (book)"", ""Stephen Halbrook"", ""Binford &amp; Mort""]","[""Koch family"", ""Fred C. Koch"", ""Koch family foundations"", ""David Koch""]","Document 1
+Title: Koch family
+Content: the koch family ( ) is an american family engaged in business, most noted for their political activities and control of koch industries, the second - largest privately owned company in the united states ( with 2013 revenues of $ 115 billion ). the family business was started by fred c. koch, who developed a new cracking method for the refinement of heavy crude oil into gasoline. fred's four sons litigated against each other over their interests in the business during the 1980s and 1990s.
+
+Document 2
+Title: Fred C. Koch
+Content: fred chase koch ( ; september 23, 1900 – november 17, 1967 ) was an american chemical engineer and entrepreneur who founded the oil refinery firm that later became koch industries, a privately held company which, under the principal ownership and leadership of koch's sons, charles and david, is listed by "" forbes, "" as of 2015, as the second - largest privately held company in the united states.
+
+Document 3
+Title: Koch family foundations
+Content: the koch family foundations are a group of charitable foundations in the united states associated with the family of fred c. koch. the most prominent of these are the charles koch foundation and the david h. koch charitable foundation, created by charles koch and david koch, two sons of fred c. koch who own the majority of koch industries, an oil, gas, paper, and chemical conglomerate which is the us's second - largest privately held company. charles'and david's foundations have provided millions of dollars to a variety of organizations, including libertarian and conservative think tanks. areas of funding include think tanks, political advocacy, climate change scepticism, higher education scholarships, cancer research, arts, and science.
+
+Document 4
+Title: David Koch
+Content: david hamilton koch ( ; born may 3, 1940 ) is an american businessman, philanthropist, political activist, and chemical engineer. he joined the family business koch industries, a conglomerate that is the second - largest privately held company in the united states, in 1970. he became president of the subsidiary koch engineering in 1979, and became a co - owner of koch industries, with older brother charles, in 1983. he is now an executive vice president. koch is an influential libertarian. he was the 1980 candidate for vice president of the united states from the united states libertarian party and helped finance the campaign. he founded citizens for a sound economy. he and his brother charles have donated to political advocacy groups and to political campaigns, almost entirely republican."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,36,New York State Route 9R rejoins its parent in a hamlet located  in what New York County?,384,96,7,20,0.2,512,dense,True,20,20,7,3,504,qwen2.5:3b,0.0,0.6666666666666666,1.0,0.5,1.2526688000070862,0.20650369999930263,0.7258404999738559,2.185012999980245,707,5,712,Albany,Albany County,"[""New York State Route 9R"", ""New York State Route 9N"", ""New York State Route 9B"", ""New York State Route 157A"", ""New York State Route 418"", ""Boght Corners, New York"", ""New York State Route 9G""]","[""New York State Route 9R"", ""New York State Route 9N"", ""New York State Route 9B""]","Document 1
+Title: New York State Route 9R
+Content: new york state route 9r ( ny 9r ) is a north – south state highway in northeastern albany county, new york, in the united states. the route is a 3. 22 mi eastern loop of u. s. route 9 ( us 9 ), connecting that route to the city of cohoes 1. 5 mi to the east. it leaves us 9 in the hamlet of latham and rejoins its parent in the hamlet of boght corners, both located in the town of colonie. most of ny 9r is a two - lane highway that passes through residential areas ; however, the southwesternmost portion of the route is four lanes wide and serves a commercial district. the route was assigned c. 1939 and has remained largely unchanged since that time, save for a brief period during the 1970s where ny 9r was partially replaced by ny 470.
+
+Document 2
+Title: New York State Route 9N
+Content: new york state route 9n ( ny 9n ) is a north – south state highway in northeastern new york in the united states. it extends from an intersection with u. s. route 9 ( us 9 ), ny 29, and ny 50 in the city of saratoga springs to a junction with us 9 and ny 22 in the clinton county hamlet of keeseville. at 143. 49 mi in total length, ny 9n is the longest letter - suffixed route in the state. it is concurrent with its parent route for 1 mi in the village of lake george and for three blocks in the hamlet of elizabethtown.
+
+Document 3
+Title: New York State Route 9B
+Content: new york state route 9b ( ny 9b ) is a state highway located within clinton county, new york, in the united states. the route serves as a connector between its parent route, u. s. route 9 ( us 9 ), in the town of champlain and us 11 in the village of rouses point. while us 9 bypasses rouses point to the west, ny 9b veers east to serve the village and the shoreline of lake champlain. ny 9b is the northernmost section of the lakes to locks passage, an all - american road. modern ny 9b was the original alignment of us 9 through the town of champlain. us 9 was moved onto its present alignment west of rouses point in the mid - 1940s, at which time its former routing to rouses point became ny 9b."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,37,12 Years a Slave starred what British actor born 10 July 1977),384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.5,1.0,1.0,0.921043699956499,0.06821619998663664,1.380013299989514,2.3692731999326497,725,8,733,Chiwetel Ejiofor,Ciwetel Ejiofor,"[""Chiwetel Ejiofor"", ""12 Years a Slave (score)"", ""Sinan Tuzcu"", ""Solomon Northup"", ""Clayton Watson"", ""Jonathan Routh"", ""Mary Forbes""]","[""Chiwetel Ejiofor"", ""12 Years a Slave (score)"", ""Sinan Tuzcu"", ""Solomon Northup"", ""Clayton Watson""]","Document 1
+Title: Chiwetel Ejiofor
+Content: chiwetel umeadi ejiofor, cbe ( ; born 10 july 1977 ) is a british actor. after enrolling at the national youth theatre in 1995, and gaining a scholarship to the london academy of music and dramatic art, at age 19 and three months into his course, ejiofor was cast by steven spielberg to play a supporting role in the film "" amistad "" ( 1997 ) as james covey.
+
+Document 2
+Title: 12 Years a Slave (score)
+Content: 12 years a slave is the original soundtrack album to the 2013 film "" 12 years a slave "" starring chiwetel ejiofor, michael fassbender, benedict cumberbatch, paul dano, and lupita nyong'o. the record contains twenty - one tracks from the original film score written and composed by hans zimmer. the score was widely admired and thought of as a contender for the academy award for original music score at the 86th academy awards.
+
+Document 3
+Title: Sinan Tuzcu
+Content: sinan tuzcu ( born 10 july 1977 ) is a turkish actor.
+
+Document 4
+Title: Solomon Northup
+Content: solomon northup ( july 10, 1807 or 1808 – 1863 ) was an american abolitionist and the primary author of the memoir "" twelve years a slave "". a free - born african american from new york, he was the son of a freed slave and a free woman of color. a farmer and a professional violinist, northup had been a landowner in hebron, new york. in 1841, he was offered a traveling musician's job and went to washington, d. c. ( where slavery was legal ) ; there he was drugged, kidnapped, and sold as a slave. he was shipped to new orleans, purchased by a planter, and held as a slave for 12 years in the red river region of louisiana, mostly in avoyelles parish. he remained a slave until he met a canadian working on his plantation who helped get word to new york, where state law provided aid to free new york citizens who had been kidnapped and sold into slavery. his family and friends enlisted the aid of the governor of new york, washington hunt, and northup regained his freedom on january 3, 1853.
+
+Document 5
+Title: Clayton Watson
+Content: clayton watson ( born 23 march 1977 ) is an australian producer, actor, writer, and director. he grew up in the australian outback on a sheep station"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,38,What was the capital of India when the Taj Mahal was commissioned?,384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,1.0,1.0,1.0,0.5,2.064773400023114,0.0656149000278674,0.43147539999336004,2.5618637000443414,719,3,722,Agra,Agra,"[""Taj Mahal"", ""Taj Mahal Bangladesh"", ""Taj Mahal, Bulandshahar"", ""The Taj Mahal Palace Hotel"", ""Black Taj Mahal"", ""Agra Fort"", ""Taj Mahal (1963 film)""]","[""Taj Mahal"", ""Taj Mahal Bangladesh"", ""Taj Mahal, Bulandshahar"", ""The Taj Mahal Palace Hotel""]","Document 1
+Title: Taj Mahal
+Content: the taj mahal (, more often ; meaning crown of the palace ) is an ivory - white marble mausoleum on the south bank of the yamuna river in the indian city of agra. it was commissioned in 1632 by the mughal emperor, shah jahan ( reigned 1628 – 1658 ), to house the tomb of his favourite wife, mumtaz mahal. the tomb is the centrepiece of a 42 acre complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+
+Document 2
+Title: Taj Mahal Bangladesh
+Content: taj mahal bangladesh ( bengali : তাজ মহল বাংলাদেশ ) is a scaled copy of the original taj mahal ( a mughal mausoleum located in agra, india ) located 10 miles east of the bangladeshi capital, dhaka in sonargaon. unlike the original, work on the building took only five years. ahsanullah moni, a wealthy bangladeshi film - maker, announced his'copycat version of taj mahal'project in december 2008. the project cost about usd $ 56 million, and was built 20 miles northeast of capital dhaka. moni has explained that he built a replica of the taj mahal so that the poor of his nation can realise their dream of seeing neighbouring india's famed monument. this caused complaints from indian officials, "" you can't just go and copy historical monuments "" an official of indian high commission in dhaka told press.
+
+Document 3
+Title: Taj Mahal, Bulandshahar
+Content: taj mahal or mini taj mahal or qadri's taj mahal, officially known as maqbara yadgare mohabbat tajammuli begum is a replica of the historic taj mahal of agra located in kaser kalan, a small village in bulandshahar of uttar pradesh, india. it was built by 81 years old a retired postmaster, faizul hasan qadri in the memory of his dead wife tajamulli begum, who died due to throat cancer in 2011.
+
+Document 4
+Title: The Taj Mahal Palace Hotel
+Content: the taj mahal palace hotel ( marathi : ताजमहल ) is a "" heritage grand "" class five - star hotel in the colaba region of mumbai, maharashtra, india, next to the gateway of india. historically it was known as the "" taj mahal hotel "" or the "" taj"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,39,"In what city did the ""Prince of tenors"" star in a film based on an opera by Giacomo Puccini?",384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,1.0,1.0,0.970860100002028,0.05913110001711175,1.2732224999926984,2.3032137000118382,747,3,750,Rome,Rome,"[""Franco Corelli"", ""La Bohème (1988 film)"", ""Tosca (1956 film)"", ""Cesira Ferrani"", ""Ron Bottcher"", ""La fanciulla del West"", ""Jacopo Puccini""]","[""Franco Corelli"", ""La Bohème (1988 film)"", ""Tosca (1956 film)"", ""Cesira Ferrani"", ""Ron Bottcher""]","Document 1
+Title: Franco Corelli
+Content: franco corelli ( 8 april 1921 – 29 october 2003 ) was an italian tenor who had a major international opera career between 1951 and 1976. associated in particular with the spinto and dramatic tenor roles of the italian repertory, he was celebrated universally for his powerhouse voice, electrifying top notes, clear timbre, passionate singing and remarkable performances. dubbed the "" prince of tenors "", corelli possessed handsome features and a charismatic stage presence which endeared him to audiences. he had a long and fruitful partnership with the metropolitan opera in new york city between 1961 and 1975. he also appeared on the stages of most of the major opera houses in europe and with opera companies throughout north america.
+
+Document 2
+Title: La Bohème (1988 film)
+Content: la boheme ( also known as "" la boheme de puccini "" ) is a 1988 italian - french film of an opera directed by luigi comencini. it is based on giacomo puccini's "" la boheme "".
+
+Document 3
+Title: Tosca (1956 film)
+Content: tosca is a 1956 italian musical film directed by carmine gallone and starring franca duval, afro poli and franco corelli. it is based on the opera "" tosca "" by giacomo puccini. it was made at cinecitta in rome.
+
+Document 4
+Title: Cesira Ferrani
+Content: cesira ferrani ( may 8, 1863 in turin – may 4, 1943 in pollone ) was an italian operatic soprano who is best known for debuting two of the most iconic roles in opera history, mimi in the original 1896 production of giacomo puccini's "" la boheme "" and the title role in puccini's "" manon lescaut "" in its 1893 world premiere. ferrani sang a wide repertoire that encompassed not only verismo opera but the works of composers like verdi, gounod, wagner, and debussy.
+
+Document 5
+Title: Ron Bottcher
+Content: ron bottcher ( 11 may 1940 – 12 april 1991 ) was an american operatic baritone who was actively performing with both the new york city opera ( nyco ) and the metropolitan opera during the 1960s. a native of sandpoint, idaho, he earned music degrees from the university of montana and the curtis institute of music. he made his debut at the santa fe opera in the summer of 1961, where he portrayed the roles of leopold in richard"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,40,What river can a  large African bovine be seen bathing in in the Mwabvi Wildlife Reserve?,384,96,7,20,0.2,512,dense,True,20,20,7,4,502,qwen2.5:3b,0.0,0.0,1.0,1.0,2.0939765000366606,0.061885999981313944,0.4268586999969557,2.58272120001493,653,6,659,Buffalo,Mwabvi River,"[""Mwabvi Wildlife Reserve"", ""Project African Wilderness"", ""Katonga Wildlife Reserve"", ""African buffalo"", ""Saint-Maurice Wildlife Reserve"", ""Ferlo Sud Wildlife Reserve"", ""Krau Wildlife Reserve""]","[""Mwabvi Wildlife Reserve"", ""Project African Wilderness"", ""Katonga Wildlife Reserve"", ""African buffalo""]","Document 1
+Title: Mwabvi Wildlife Reserve
+Content: with an area of 135km² mwabvi wildlife reserve is malawi ’ s smallest national park, and its least accessible. nevertheless, it has a wide variety of habitats, including mopane, combretum and brachystegia woodland, as well as open savanna, dambo, and riverine areas. mwabvi was the last natural home to malawi's black rhino population, but both wildlife and woodland have been poached over recent years. however many species of antelope, including kudu, sable, impala and nyala, are present, and even leopard and hyena have been seen. buffalo still bathe in the mwabvi river, and, although the number of human tourists is low, lions from neighbouring mozambique are regular visitors. the scenery is spectacular, with views over the shire river and the zambesi river, and the magnificent sandstone outcrops give an almost lunar feel to the landscape.
+
+Document 2
+Title: Project African Wilderness
+Content: project african wilderness ( paw ) is a not for profit organisation with the express purpose of protecting and restoring the mwabvi wildlife reserve in malawi.
+
+Document 3
+Title: Katonga Wildlife Reserve
+Content: the katonga wildlife reserve is a wildlife reserve in western uganda, along the banks of the katonga river. the reserve was established in 1998 and has approximately 211 km2. many of the species of plants and animals in the reserve are unique to its wetland environment.
+
+Document 4
+Title: African buffalo
+Content: the african buffalo or cape buffalo ( "" syncerus caffer "" ) is a large african bovine. it is not closely related to the slightly larger wild water buffalo of asia and its ancestry remains unclear. "" syncerus caffer caffer "", the cape buffalo, is the typical subspecies, and the largest one, found in south and east africa. "" s. c. nanus "" ( african forest buffalo ) is the smallest subspecies, common in forest areas of central and west africa, while "" s. c. brachyceros "" is in west africa and "" s. c. aequinoctialis "" is in the savannas of east africa. the adult buffalo's horns are its characteristic feature ; they have fused bases, forming a continuous bone shield across the top of the head referred to as a "" boss "". they are widely regarded as very dangerous animals, as they gore and kill over 200 people every year."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,41,Jalen Jones plays basketball for an NBA team that plays their home games in what arena?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,1.0,1.0,1.0855318999965675,0.0521673999610357,1.1820906999637373,2.3197899999213405,735,5,740,Smoothie King Center,Smoothie King Center,"[""Jalen Jones"", ""Washington NBA G League team"", ""New Orleans Pelicans"", ""Tyus Jones"", ""Erie BayHawks (2017–)"", ""Raptors 905"", ""Windy City Bulls""]","[""Jalen Jones"", ""Washington NBA G League team"", ""New Orleans Pelicans"", ""Tyus Jones"", ""Erie BayHawks (2017–)""]","Document 1
+Title: Jalen Jones
+Content: jalen jones ( born may 27, 1993 ) is an american professional basketball player for the new orleans pelicans of the national basketball association ( nba ). he was signed on a two - way contract with the nba g league. he played college basketball for southern methodist and texas a & m.
+
+Document 2
+Title: Washington NBA G League team
+Content: the washington nba g league team is an american professional basketball team in the nba g league and an affiliate of the washington wizards of the national basketball association. based in washington, d. c., the team will play their home games during the 2018 – 19 season at the st. elizabeths east entertainment and sports arena. the team became the twenty - third g league team to be owned by an nba team.
+
+Document 3
+Title: New Orleans Pelicans
+Content: the new orleans pelicans are an american professional basketball team based in new orleans, louisiana. the pelicans compete in the national basketball association ( nba ) as a member club of the league's western conference southwest division. the team plays their home games in the smoothie king center ( formerly known as the new orleans arena ).
+
+Document 4
+Title: Tyus Jones
+Content: tyus robert jones ( born may 10, 1996 ) is an american professional basketball player for the minnesota timberwolves of the national basketball association ( nba ). he played college basketball for the duke blue devils in his freshman season as part of the 2014 – 15 national championship team. he was ranked among the top 10 players in the national high school class of 2014 by rivals. com, scout. com and espn. he was a minnesota state high school league ( mshsl ) class 4a state champion, three - time minnesota associated press boys basketball player of the year and three - time minnesota boys basketball gatorade player of the year for apple valley high school. he played in the 2014 mcdonald's all - american boys game, 2014 jordan brand classic and the 2014 nike hoop summit. he won the skills competition at the 2014 mcdonald's all - american game and posted the only double - double in the 2014 jordan brand classic.
+
+Document 5
+Title: Erie BayHawks (2017–)
+Content: the erie bayhawks are an american professional basketball team of the nba g league and an affiliate of the atlanta hawks of the national basketball association. based in erie, pennsylvania, the team will play their home games during the 2017 – 18 and 2018 – 19 seasons at the erie insurance arena. the atlanta hawks currently plan"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,42,The On Tour Forever album gave Blues Traveler the opportunity to display what musical trademark?,384,96,7,20,0.2,512,dense,True,20,20,7,7,486,qwen2.5:3b,0.0,0.0,1.0,1.0,1.264621599984821,0.09731869999086484,0.8000745000317693,2.162014800007455,672,4,676,extensive use of segues,Harmonica,"[""Blues Traveler (album)"", ""On Tour Forever"", ""Travelers and Thieves"", ""Blues Traveler"", ""Travelogue: Blues Traveler Classics"", ""Bridge (Blues Traveler album)"", ""North Hollywood Shootout""]","[""Blues Traveler (album)"", ""On Tour Forever"", ""Travelers and Thieves"", ""Blues Traveler"", ""Travelogue: Blues Traveler Classics"", ""Bridge (Blues Traveler album)"", ""North Hollywood Shootout""]","Document 1
+Title: Blues Traveler (album)
+Content: blues traveler, the eponymous debut album from blues traveler, was released on a & m records in 1990. it establishes the band's trademark jam band sound featuring john popper's harmonica.
+
+Document 2
+Title: On Tour Forever
+Content: on tour forever is a live ep album released by blues traveler in 1992. only ten thousand copies were produced, packaged as a double album with copies of the band's second album, "" travelers and thieves "".
+
+Document 3
+Title: Travelers and Thieves
+Content: travelers and thieves is blues traveler's second album, released on a & m records in 1991. the album was released in two different versions : an album - only version, and an extremely limited two - cd pressing. the bonus disc was called "" on tour forever "". on itunes the album is listed only as "" travelers "" due to the full name being split across two drawings, one on the cover and one inside the cd liner notes.
+
+Document 4
+Title: Blues Traveler
+Content: blues traveler is an american rock band formed in princeton, new jersey in 1987. the band's music covers a variety of genres, including blues rock, psychedelic rock, folk rock, soul, and southern rock. it is known for extensive use of segues in their live performances, and was considered a key part of the re - emerging jam band scene of the 1990s, spearheading the h. o. r. d. e. touring music festival.
+
+Document 5
+Title: Travelogue: Blues Traveler Classics
+Content: travelogue : blues traveler classics is a compilation album by american rock band blues traveler, released in 2002. it is composed of the band's greatest hits from before they were dropped by a & m records.
+
+Document 6
+Title: Bridge (Blues Traveler album)
+Content: bridge is the sixth album by american jam band blues traveler, released may 2001 ( see 2001 in music ). this is blues traveler's first album following the 1999 death of bassist bobby sheehan. the album was originally titled "" bridge out of brooklyn. ""
+
+Document 7
+Title: North Hollywood Shootout
+Content: north hollywood shootout is american jam band blues traveler's tenth studio album, released on august 26, 2008, and produced by david bianco, a 1996 grammy winner. in a notable departure from previous blues traveler releases, the album includes a spoken word piece featuring bruce willis."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,43,Which Victorian poet was born in a 15th-century castle home to the Earl of Southesk?,384,96,7,20,0.2,512,dense,True,20,20,7,7,483,qwen2.5:3b,0.0,0.4,1.0,1.0,1.2450926000019535,0.08326099999248981,0.8640039000310935,2.192357500025537,730,4,734,Charlotte Carnegie,Lady Charlotte Elliot,"[""Kinnaird Castle, Brechin"", ""Lady Charlotte Elliot"", ""Dundas Castle"", ""Megginch Castle"", ""Isabella Kelly"", ""Kilmory Castle, Bute"", ""Crayke Castle""]","[""Kinnaird Castle, Brechin"", ""Lady Charlotte Elliot"", ""Dundas Castle"", ""Megginch Castle"", ""Isabella Kelly"", ""Kilmory Castle, Bute"", ""Crayke Castle""]","Document 1
+Title: Kinnaird Castle, Brechin
+Content: kinnaird castle is a 15th - century castle in angus, scotland. the castle has been home to the carnegie family, the earl of southesk, for more than 600 years.
+
+Document 2
+Title: Lady Charlotte Elliot
+Content: lady charlotte elliot ( 22 july 1839 – 15 january 1880 ), born charlotte carnegie, was a victorian poet born on 22 july 1839 in the parish of farnell, angus ( possibly at kinnaird castle ), scotland.
+
+Document 3
+Title: Dundas Castle
+Content: dundas castle is a 15th - century castle, with substantial 19th - century additions by william burn, in the dalmeny parish of west lothian, scotland. the home of the dundas family since the middle ages, it was sold in the late 19th century and is currently the residence of politician and businessman sir jack stewart - clark.
+
+Document 4
+Title: Megginch Castle
+Content: megginch castle is a 15th - century castle in perth and kinross, in central scotland. it was the family home of the late cherry drummond, 16th baroness strange. it is now occupied by lady strange's daughter catherine star violetta herdman and her husband.
+
+Document 5
+Title: Isabella Kelly
+Content: isabella kelly, nee fordyce, also isabella hedgeland ( born at cairnburgh castle in the scottish highlands and baptised on 4 may 1759 – died on 25 june 1857 in london ) was a scottish novelist and poet.
+
+Document 6
+Title: Kilmory Castle, Bute
+Content: kilmory castle ( kilmorie castle, crowner's castle ) is the remains of a 15th - century castle at meikle kilmory, isle of bute, scotland. the castle was the residence of the jamiesons of kilmorie, and was already a ruin in the 18th century. the jamiesons of kilmorie were the hereditary coroners of bute. the ruins are a secular listed building.
+
+Document 7
+Title: Crayke Castle
+Content: crayke castle is a grade i listed 15th - century castle in crayke, north yorkshire, england. the castle consists of a restored 15th century four storey tower house with attached outbuildings to the rear and a separate ruined 15th tower, the "" new tower "". it is situated on church hill in the village of crayke."
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,44,Alexander Petrovich Nikolayev received the title Hero of the Soviet Union and the Order of Lenin for his actions during the   the final major offensive of the European theatre of what war?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,1.0,1.0,0.5,0.5,0.9872483999934047,0.15318660001503304,1.162171899981331,2.302606899989769,779,4,783,World War II,World War II,"[""Alexander Nikolayev"", ""Mikhail Linnik"", ""Vladimir Fedorovich Vladimirov"", ""Georgy Vasilyevich Ivanov"", ""Boris Vladimirov"", ""Anatoly Petrakovsky"", ""Bahatdin Mirzayev""]","[""Alexander Nikolayev"", ""Mikhail Linnik"", ""Vladimir Fedorovich Vladimirov"", ""Georgy Vasilyevich Ivanov"", ""Boris Vladimirov""]","Document 1
+Title: Alexander Nikolayev
+Content: alexander petrovich nikolayev ( russian : александр петрович николаев ; 14 november 1918 – 13 june 2009 ) was a red army senior lieutenant and hero of the soviet union. he received the title hero of the soviet union and the order of lenin for his actions during the battle of berlin. nikolayev also fought in the siege of leningrad.
+
+Document 2
+Title: Mikhail Linnik
+Content: mikhail nikiforovich linnik ( russian : михаил никифорович линник ; 25 october 1916 – 21 december 2007 ) was a soviet army captain and hero of the soviet union. linnik was awarded the title hero of the soviet union and the order of lenin for his actions during the lublin – brest offensive in september 1944.
+
+Document 3
+Title: Vladimir Fedorovich Vladimirov
+Content: vladimir fedorovich vladimirov ( russian : владимир федорович владимиров ; 9 july 1914 – december 1943 ) was a red army lieutenant during world war ii and a hero of the soviet union. he was posthumously awarded the title hero of the soviet union and the order of lenin for his actions during the battle of the dnieper. vladimirov was killed in action during december 1943.
+
+Document 4
+Title: Georgy Vasilyevich Ivanov
+Content: georgy vasilyevich ivanov ( russian : георгии васильевич иванов ; 25 may 1901 – 25 december 2001 ) was a soviet army major general and hero of the soviet union. ivanov was awarded the title hero of the soviet union and the order of lenin for his leadership of the 6th guards rifle division from late 1944 to 1945. ivanov fought in world war ii at the battle of the dnieper and the vistula – oder offensive.
+
+Document 5
+Title: Boris Vladimirov
+Content: boris alexandrovich vladimirov ( russian : борис александрович владимиров ; 14 april 1905 – 1 may 1978 ) was a soviet army lieutenant general and a hero of the soviet union. vladimirov served in the russian civil war after being drafted into the red army in 1921. he became an officer and by 1941 was a deputy regimental commander. after the german invasion of the soviet union, vladimirov successively became senior"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,45,Where did Cale Gundy's brother play football in college?,384,96,7,20,0.2,512,dense,True,20,20,7,5,512,qwen2.5:3b,0.0,0.8,1.0,1.0,2.2041120000067167,0.2667858999921009,0.5432833000086248,3.0141812000074424,730,5,735,Oklahoma State University,Oklahoma State,"[""Cale Gundy"", ""Mike Gundy"", ""Ike Mahoney"", ""Ben Coates"", ""Bob Adams (American football)"", ""Wesley Englehorn"", ""Case McCoy""]","[""Cale Gundy"", ""Mike Gundy"", ""Ike Mahoney"", ""Ben Coates"", ""Bob Adams (American football)""]","Document 1
+Title: Cale Gundy
+Content: joseph cale gundy ( born april 10, 1972 ) is a former american football quarterback who played for the oklahoma sooners from 1990 to 1993. while at oklahoma he was a member of delta tau delta international fraternity. after coaching running backs for 16 years at oklahoma gundy was promoted to assistant head coach and moved to inside receivers for the 2015 season. his brother, mike, is the head football coach at oklahoma state university.
+
+Document 2
+Title: Mike Gundy
+Content: mike gundy ( born august 12, 1967 ) is an american football coach and former player. he is currently the head football coach at oklahoma state university. gundy played college football at oklahoma state, where he played quarterback from 1986 to 1989. he became oklahoma state's coach on january 3, 2005. in 2007, he received national media attention for his heated criticism of a newspaper article on one of his players.
+
+Document 3
+Title: Ike Mahoney
+Content: frank john mahoney jr. ( october 25, 1901 – november 21, 1961 ) was an american football back who played five seasons with the chicago cardinals of the national football league. he played college football at creighton university and attended the omaha high school of commerce in omaha, nebraska. he was a member of the chicago cardinals team that were nfl champions in 1925. he also played baseball, basketball and participated in track and field. mahoney played for the chicago bruins of the american basketball league. he had received an offer to play baseball for the pittsburgh pirates but opted to play football for the chicago cardinals.
+
+Document 4
+Title: Ben Coates
+Content: ben terrence coates ( born august 16, 1969 ) is a former american football tight end in the national football league and former ciaa football coach and former nfl tight ends coach. coates didn't play football until his senior year at greenwood high school, and was a multi - sport player at livingstone college located in salisbury, north carolina. as a gridiron player at livingstone, he broke nearly all meaningful records at the school, but due to his split - sport performances, against weak competition, for a non - notable school, he received little notice outside of the ciaa. while a college student, he joined phi beta sigma fraternity through the upsilon chapter at livingstone college.
+
+Document 5
+Title: Bob Adams (American football)
+Content: robert bruce "" bob "" adams ( born august 15, 1946 ) is a former professional american football tight end in the national football league ( nfl ) and"
+rag_surrogate_v2_hotpotqa_search_config_07048,hotpotqa,search,config_07048,46,"Who has released more solo albums, Nick Carter or Brady Seals?",384,96,7,20,0.2,512,dense,True,20,20,7,4,512,qwen2.5:3b,0.0,0.0,1.0,1.0,0.9866490000276826,0.1694108999799937,1.347075700003188,2.5031356000108644,706,3,709,Brady Seals,Nick Carter,"[""Thompson Street (album)"", ""Nick Carter (musician)"", ""The Truth (Brady Seals album)"", ""Brady Seals"", ""Brady Seals (album)"", ""Another You, Another Me"", ""Jamie Hutchings""]","[""Thompson Street (album)"", ""Nick Carter (musician)"", ""The Truth (Brady Seals album)"", ""Brady Seals""]","Document 1
+Title: Thompson Street (album)
+Content: thompson street is the third solo album by american country music singer brady seals. it was released in february 2003 via image entertainment. no singles were released from it, and after its release, seals founded the band hot apple pie.
+
+Document 2
+Title: Nick Carter (musician)
+Content: nickolas gene "" nick "" carter ( born january 28, 1980 ) is an american singer, songwriter, actor, and dancer. he is best known as a member of the pop group the backstreet boys. as of 2015, carter has released three solo albums, "" now or never "", "" i'm taking off "" and "" all american "" during breaks between backstreet boys schedules, and a collaboration with jordan knight titled "" nick & knight "". he has made occasional television appearances and starred in his own reality shows, "" house of carters "" and "" i ( heart ) nick carter "". he gained fame in the mid 1990s and early 2000s as a teen idol. he is also the older brother of singer aaron carter and the late leslie carter.
+
+Document 3
+Title: The Truth (Brady Seals album)
+Content: the truth is the debut studio album of american country music singer brady seals, and his first solo album after leaving the country band little texas. it was released on february 25, 1997 on reprise records. the album includes the singles "" another you, another me "", "" still standing tall "", and "" natural born lovers "". of these, only "" another you, another me "" reached top 40 on hot country songs. seals co - wrote all but two of the album's songs, and co - produced the album with rodney crowell.
+
+Document 4
+Title: Brady Seals
+Content: brady seals ( born march 29, 1969 ) is an american country music artist. he is the cousin of jim seals ( of seals & crofts ) and dan seals and johnny duncan, the nephew of troy seals, and the husband of former bna records recording artist lisa stewart. seals made his debut in 1988 as co - lead vocalist and keyboardist in the sextet little texas, with whom he recorded until his departure in late 1994. between then and 2002, he recorded as a solo singer, releasing three studio albums and charting in the top 40 on the country charts with "" another you, another me "". in 2002, seals formed a quartet called hot apple pie, in which he has recorded one studio album and charted three singles. a fourth solo album, "" play time "", was"

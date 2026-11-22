@@ -1,0 +1,40 @@
+question_id,question,gold_answer,predicted_answer,chunk_size,chunk_overlap,retrieval_k,top_k,context_budget,similarity_threshold,candidate_count,filtered_count,returned_count,supporting_title_recall,supporting_context_title_recall,context_documents_used,context_tokens,answer_em,answer_f1,retrieval_latency_seconds,context_construction_latency_seconds,generation_latency_seconds,input_tokens,output_tokens,total_tokens,retrieved_titles,context_document_titles,actual_context
+3,Which actor does American Beauty and American Beauty have in common?,Kevin Spacey,Kevin Spacey,256,32,100,10,2048,0.0,100,100,10,1.0,1.0,10,1226,1.0,1.0,0.002959900004498195,0.1352292999945348,0.6005854000031832,1507,4,1511,"[""Coty, Inc."", ""American Beauty (1927 film)"", ""The Kids Aren't Alright (Fall Out Boy song)"", ""Christopher Greenbury"", ""American Beauty/American Psycho Tour"", ""List of accolades received by American Beauty"", ""La Belle Am\u00e9ricaine"", ""American Beauty (1999 film)"", ""Miss American Beauty 1963"", ""American Beauty (soundtrack)""]","[""Coty, Inc."", ""American Beauty (1927 film)"", ""The Kids Aren't Alright (Fall Out Boy song)"", ""Christopher Greenbury"", ""American Beauty/American Psycho Tour"", ""List of accolades received by American Beauty"", ""La Belle Am\u00e9ricaine"", ""American Beauty (1999 film)"", ""Miss American Beauty 1963"", ""American Beauty (soundtrack)""]","Document 1
+Title: Coty, Inc.
+Content: coty, inc., is a north american beauty products manufacturer based in new york founded in paris, france, by francois coty in 1904. its main products are fragrances, colour cosmetics and skin and body care products. it is known for its cooperation with designers and celebrities for the creation of fragrances. its biggest brands, or "" power brands "" as it calls them, are : calvin klein ( fragrance and cosmetics ), chloe ( fragrance ), davidoff ( fragrance ), y ( fragrance ), marc jacobs ( fragrance ), philosophy ( beauty ), adidas ( fragrance and beauty ), playboy ( fragrance ), opi products ( beauty ), rimmel london ( make - up ), max factor ( cosmetics ) and sally hansen ( beauty ).
+
+Document 2
+Title: American Beauty (1927 film)
+Content: american beauty is a lost 1927 american silent film romantic drama produced and distributed by first national pictures. this film was directed by richard wallace and starred billie dove. it was based on a short story "" american beauty "" by wallace irwin. she is supported by walter mcgrail and margaret livingston.
+
+Document 3
+Title: The Kids Aren't Alright (Fall Out Boy song)
+Content: "" the kids aren't alright "" is a song by american rock band fall out boy. it was released as the first promotional single ( overall the third release ) on december 15, 2014 from their sixth studio album, "" american beauty / american psycho "", as a digital download with pre - orders of the album. it coincided with the release of the second official single from the album, "" american beauty / american psycho "", along with the album artwork and track listing. when asked which "" american beauty / american psycho "" track the band was most proud of, pete wentz responded, "" it's hard to say because it's like having kids. [ patrick ] says the kids aren't alright "".
+
+Document 4
+Title: Christopher Greenbury
+Content: christopher greenbury, ace ( september 24, 1951 – january 4, 2007 ) was a british film editor with more than thirty film credits dating from 1979's "" the muppet movie "". with tariq anwar, he won the bafta award for best editing for "" american beauty "" ( 1999 ), which he was also nominated for an academy award for best film editing. "" american beauty "" is a serious drama, but in general greenbury edited comedy films, including six directed by the farrelly brothers commencing with 1994's "" dumb and dumber "".
+
+Document 5
+Title: American Beauty/American Psycho Tour
+Content: the american beauty / american psycho tour was a concert tour by american rock band fall out boy. supporting the band's sixth studio album "" american beauty / american psycho "" ( 2015 ), the tour visited north america and europe in 2015. the north american leg was co - headlined with american rapper wiz khalifa under the name the boys of zummer. the boys of zummer leg with wiz khalifa ranked fifty - ninth for pollstar's year end top 200 north american tours of 2015, grossing $ 18. 2 million.
+
+Document 6
+Title: List of accolades received by American Beauty
+Content: "" american beauty "" is a 1999 american drama film directed by sam mendes and written by alan ball. the film stars kevin spacey as lester burnham, a middle - aged office worker who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend. released in north america on september 15, 1999, "" american beauty "" was positively received by critics and audiences alike ; it was the best - reviewed american film of the year and grossed over $ 350 million worldwide. reviewers praised all aspects of the production, with particular emphasis on mendes, spacey and ball ; criticism tended to focus on the familiarity of the characters and setting. at the 1999 academy awards, the film won best picture, best director, best actor ( for spacey ), best original screenplay and best cinematography ( for conrad hall ). the film was nominated for and won numerous other awards and honors, mainly for the direction, writing, and acting.
+
+Document 7
+Title: La Belle Américaine
+Content: la belle americaine english : the american beauty, is a french comedy film from 1961, directed by robert dhery, written by alfred adam, starring alfred adam and louis de funes. the film was known under the titles : "" la bella americana "" ( italy ), "" the american beauty "" ( english title ), "" der tolle amerikaner "" ( west germany ).
+
+Document 8
+Title: American Beauty (1999 film)
+Content: american beauty is a 1999 american drama film directed by sam mendes and written by alan ball. kevin spacey stars as lester burnham, a 42 - year - old advertising executive who has a midlife crisis when he becomes infatuated with his teenage daughter's best friend, angela ( mena suvari ). annette bening co - stars as lester's materialistic wife, carolyn, and thora birch plays their insecure daughter, jane. wes bentley, chris cooper, and allison janney also feature. the film is described by academics as a satire of american middle - class notions of beauty and personal satisfaction ; analysis has focused on the film's explorations of romantic, and paternal love, sexuality, beauty, materialism, self - liberation, and redemption.
+
+Document 9
+Title: Miss American Beauty 1963
+Content: this is the first edition of the miss american beauty pageant. the miss american beauty pageant was created to select a usa representative to the miss international. a live pageant was held from 1963 to 1967. after that time, there is no actual documentation that a pageant was actually held for the usa representative. the miss american beauty title continued to be used for the usa representative to miss international until approximately 2003.
+
+Document 10
+Title: American Beauty (soundtrack)
+Content: american beauty : music from the original motion picture soundtrack is the soundtrack album to the 1999 film starring kevin spacey and annette bening."

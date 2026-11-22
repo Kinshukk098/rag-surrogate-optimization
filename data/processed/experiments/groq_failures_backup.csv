@@ -1,0 +1,15 @@
+dataset,split,config_id,question_id,error,stage
+hotpotqa,train,config_05197,22,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,24,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,25,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,26,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,27,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,28,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,29,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,30,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,31,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,32,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,33,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,34,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,35,All retry attempts failed,question_evaluation
+hotpotqa,train,config_05197,36,All retry attempts failed,question_evaluation
