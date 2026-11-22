@@ -1,0 +1,22 @@
+{
+  "sampling_method": "Latin Hypercube Sampling",
+  "selection_method": "LHS targets matched to unique candidates",
+  "random_seed": 42,
+  "candidate_space_size": 12000,
+  "selected_configurations": 400,
+  "training_configurations": 320,
+  "test_configurations": 80,
+  "parameters": [
+    "chunk_size",
+    "chunk_overlap",
+    "top_k",
+    "similarity_threshold",
+    "context_budget",
+    "retriever",
+    "reranker"
+  ],
+  "distance_metric": "Euclidean on normalized parameter values",
+  "question_dataset": "HotpotQA",
+  "questions_per_configuration": 100,
+  "expected_question_configuration_evaluations": 40000
+}

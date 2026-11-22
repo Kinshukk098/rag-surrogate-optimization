@@ -1,0 +1,19 @@
+{
+  "sampling_method": "Balanced randomized discrete LHS",
+  "random_seed": 42,
+  "candidate_space_size": 12000,
+  "selected_configurations": 400,
+  "training_configurations": 320,
+  "test_configurations": 80,
+  "parameters": [
+    "chunk_size",
+    "chunk_overlap",
+    "top_k",
+    "similarity_threshold",
+    "context_budget",
+    "retriever",
+    "reranker"
+  ],
+  "questions_per_configuration": 100,
+  "expected_question_configuration_evaluations": 40000
+}

@@ -1,0 +1,33 @@
+
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Model and dataset caches
+.cache/
+hf_cache/
+*.safetensors
+*.bin
+
+# Generated experiment outputs
+data/processed/experiments/
+data/processed/experiment_results*.csv
+data/processed/parameter_validation_pilot.csv
+data/processed/quality_evaluation.csv
+data/processed/ragas_pilot_input.csv
+*.log
+
+# Temporary files
+.DS_Store
+# Other generated experiment results
+data/processed/experiment_results*.csv
+data/processed/parameter_validation_pilot.csv
+data/processed/quality_evaluation.csv
+data/processed/ragas_pilot_input.csv

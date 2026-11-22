@@ -1,0 +1,366 @@
+[
+  {
+    "id": "5ae143ed55429920d5234360",
+    "question": "In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?",
+    "answer": "1755",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Sergei Aleksandrovich Tokarev",
+        "Moscow State University"
+      ],
+      "sent_id": [
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "5abc19705542993a06baf86e",
+    "question": "Black Book starred the actress and writer of what heritage?",
+    "answer": "Dutch",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Black Book (film)",
+        "Halina Reijn"
+      ],
+      "sent_id": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5ac3e0f7554299194317388b",
+    "question": "Which actor does American Beauty and American Beauty have in common?",
+    "answer": "Kevin Spacey",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "American Beauty (soundtrack)",
+        "American Beauty (1999 film)"
+      ],
+      "sent_id": [
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "5ae518655542993aec5ec139",
+    "question": "Ken Pruitt  was a Republican member of an upper house of the legislature with how many members ?",
+    "answer": "40 members",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Ken Pruitt",
+        "Florida Senate",
+        "Florida Senate"
+      ],
+      "sent_id": [
+        0,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "5ab985eb554299131ca42360",
+    "question": "Between Greyia and Calibanus, which genus contains more species?",
+    "answer": "Greyia",
+    "type": "comparison",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Greyia",
+        "Greyia",
+        "Calibanus"
+      ],
+      "sent_id": [
+        0,
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5a8753d95542994846c1cd63",
+    "question": "Did John Updike and Tom Clancy both publish more than 15 bestselling novels?",
+    "answer": "yes",
+    "type": "comparison",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "John Updike",
+        "Tom Clancy"
+      ],
+      "sent_id": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "5ab97d0a5542996be202051e",
+    "question": "Who was hung for assisting the attempted surrender of a defector from the American Continental Army to the British Army?",
+    "answer": "John André",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "John André",
+        "Benedict Arnold"
+      ],
+      "sent_id": [
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5adef1b35542993a75d263af",
+    "question": "which Mexican and American film actress is Ethel Houbiers  French voice of ",
+    "answer": "Salma Hayek Pinault",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Ethel Houbiers",
+        "Salma Hayek"
+      ],
+      "sent_id": [
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5a73b55855429978a71e9086",
+    "question": "Which major international airport in south-east England ranks as the 8th busiest airport in Europe and replaced Croydon Airport?",
+    "answer": "Gatwick Airport",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Croydon Airport",
+        "Croydon Airport",
+        "Gatwick Airport",
+        "Gatwick Airport"
+      ],
+      "sent_id": [
+        0,
+        1,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "5ae80919554299540e5a56f6",
+    "question": "Isabella Kelly was born at a ruined castle characterized as one of the most isolated fortifications in Britain by who?",
+    "answer": "The Changing Scottish Landscape",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Isabella Kelly",
+        "Cairnburgh Castle",
+        "Cairnburgh Castle"
+      ],
+      "sent_id": [
+        0,
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "5ae361605542994393b9e69b",
+    "question": "The facility where Robert Croft worked as a navy instructor was also known as?",
+    "answer": "\"Home of the Submarine Force\"",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Robert Croft (diver)",
+        "Naval Submarine Base New London"
+      ],
+      "sent_id": [
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5ac3a76e554299741d48a2be",
+    "question": "Who released the song \"With or Without You\" first, Jai McDowall or U2?",
+    "answer": "U2",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Believe (Jai McDowall album)",
+        "Believe (Jai McDowall album)",
+        "Believe (Jai McDowall album)",
+        "With or Without You",
+        "With or Without You"
+      ],
+      "sent_id": [
+        0,
+        1,
+        2,
+        0,
+        1
+      ]
+    }
+  },
+  {
+    "id": "5a7557d75542992d0ec05f68",
+    "question": "Which \"Roseanne\" star is in Scream 2?",
+    "answer": "Laurie Metcalf",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Scream 2",
+        "Scream 2",
+        "Laurie Metcalf",
+        "Laurie Metcalf"
+      ],
+      "sent_id": [
+        0,
+        1,
+        1,
+        3
+      ]
+    }
+  },
+  {
+    "id": "5a8d12ca5542994ba4e3dbe2",
+    "question": "In what city is the company that Fastjet Tanzania was originally founded as a part of prior to rebranding based?",
+    "answer": "Nairobi, Kenya",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Fastjet Tanzania",
+        "Fly540"
+      ],
+      "sent_id": [
+        1,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5ab7f6d35542993667794070",
+    "question": "What is the name of the Australian specialist electronic music magazine that features avant-rock, experimental sound art, and experimental hip hop?",
+    "answer": "Cyclic Defrost",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Cyclic Defrost",
+        "Cyclic Defrost",
+        "Experimental hip hop"
+      ],
+      "sent_id": [
+        0,
+        2,
+        0
+      ]
+    }
+  },
+  {
+    "id": "5ac3d9135542995c82c4ac4c",
+    "question": "What is the population of the city that Munsonville is in the northwest corner of?",
+    "answer": "729 at the 2010 census",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Munsonville, New Hampshire",
+        "Nelson, New Hampshire"
+      ],
+      "sent_id": [
+        1,
+        1
+      ]
+    }
+  },
+  {
+    "id": "5ae129115542990adbacf722",
+    "question": "A Pair of Brown Eyes and Wild Mountain Thyme is based from what artists song?",
+    "answer": "Francis McPeake",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "A Pair of Brown Eyes",
+        "Wild Mountain Thyme"
+      ],
+      "sent_id": [
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "id": "5a86769c5542994775f60776",
+    "question": "Armageddon in Retrospect was written by the author who was best known for what 1969 satire novel?",
+    "answer": "Slaughterhouse-Five",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Armageddon in Retrospect",
+        "Kurt Vonnegut"
+      ],
+      "sent_id": [
+        0,
+        2
+      ]
+    }
+  },
+  {
+    "id": "5ab31864554299233954ff06",
+    "question": "What class of instrument does Apatim Majumdar play?",
+    "answer": "strings",
+    "type": "bridge",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Apratim Majumdar",
+        "Apratim Majumdar",
+        "Sarod"
+      ],
+      "sent_id": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  {
+    "id": "5a7b1023554299042af8f6c2",
+    "question": " Which movie did Disney produce first,  The Many Adventures of Winnie the Pooh or Ride a Wild Pony?",
+    "answer": "Ride a Wild Pony",
+    "type": "comparison",
+    "level": "hard",
+    "supporting_facts": {
+      "title": [
+        "Ride a Wild Pony",
+        "The Many Adventures of Winnie the Pooh"
+      ],
+      "sent_id": [
+        0,
+        0
+      ]
+    }
+  }
+]
