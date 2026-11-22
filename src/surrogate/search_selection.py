@@ -34,11 +34,11 @@ CANDIDATE_PATH = (
 
 OUTPUT_PATH = (
     ROOT / "data/processed/experiments/search_results"
-    / "selected_search_configurations_reduced.csv"
+    / "selected_search_configurations_top5.csv"
 )
 
 SEED = 42
-SELECTION_BUDGET = 2
+SELECTION_BUDGET = 5
 
 TARGET_DIRECTIONS = {
     "mean_answer_f1": "max",
@@ -227,7 +227,7 @@ def select_configurations():
 
     print("\n========== SELECTION COMPLETED ==========")
     print("Total selections:", len(results_df))
-    print("Expected selections:", 4 * 7 * 2)
+    print("Expected selections:", 4 * 7 *  SELECTION_BUDGET)
     print("Unique configurations:", results_df["config_id"].nunique())
     print("Saved to:", OUTPUT_PATH)
 
