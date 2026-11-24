@@ -3,7 +3,7 @@
   "dataset": "hotpotqa",
   "questions_path": "data/splits/hotpotqa_100_questions.json",
   "corpus_path": "data/processed/hotpotqa_100_corpus.json",
-  "output_path": "data/processed/parameter_validation_pilot_v2.csv",
+  "output_path": "data/processed/demo_run.csv",
 
   "question_limit": 2,
 
@@ -20,7 +20,7 @@
   },
 
   "llm": {
-    "model": "qwen/qwen3.8-27b",
+    "model": "qwen2.5:3b",
     "temperature": 0,
     "max_completion_tokens": 256,
     "seed": 42

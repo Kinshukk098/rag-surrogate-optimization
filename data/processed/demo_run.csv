@@ -1,0 +1,39 @@
+run_id,dataset,config_id,question_id,question,chunk_size,chunk_overlap,top_k,similarity_threshold,context_budget,retriever,reranker,candidate_count,filtered_count,returned_count,context_documents_used,context_tokens,llm_model,answer_em,answer_f1,supporting_title_recall,supporting_context_title_recall,retrieval_pipeline_latency_seconds,context_construction_latency_seconds,generation_latency_seconds,total_latency_seconds,input_tokens,output_tokens,total_tokens,gold_answer,predicted_answer,retrieved_titles,context_document_titles,actual_context
+parameter_validation_001,hotpotqa,parameter_validation_001,1,In what year was the university where Sergei Aleksandrovich Tokarev was a professor founded?,256,32,5,0.5,1024,dense,False,20,20,5,5,481,qwen2.5:3b,1.0,1.0,1.0,1.0,0.01363509998191148,0.03168709995225072,6.26864799996838,6.313970199902542,612,5,617,1755,1755,"[""Sergei Aleksandrovich Tokarev"", ""Sergei Kosarev"", ""Sergei Dmitrochenko"", ""Sergei Sholokhov"", ""Moscow State University""]","[""Sergei Aleksandrovich Tokarev"", ""Sergei Kosarev"", ""Sergei Dmitrochenko"", ""Sergei Sholokhov"", ""Moscow State University""]","Document 1
+Title: Sergei Aleksandrovich Tokarev
+Content: sergei aleksandrovich tokarev ( russian : сергеи александрович токарев, 29 december 1899 – 19 april 1985 ) was a russian scholar, ethnographer, historian, researcher of religious beliefs, doctor of historical sciences, and professor at moscow state university.
+
+Document 2
+Title: Sergei Kosarev
+Content: sergei aleksandrovich kosarev ( russian : сергеи александрович косарев ; born january 29, 1993 ) is a russian football midfielder, who currently plays for fc mitos novocherkassk.
+
+Document 3
+Title: Sergei Dmitrochenko
+Content: sergei aleksandrovich dmitrochenko ( russian : сергеи александрович дмитроченко ; born june 21, 1993 ) is a russian football midfielder.
+
+Document 4
+Title: Sergei Sholokhov
+Content: sergei aleksandrovich sholokhov ( russian : сергеи александрович шолохов ; born september 6, 1980 ) is a russian professional football player. as of august 2009, he plays in the russian second division for fc avangard kursk. before 2004 he was known as sergei kocherga ( russian : сергеи кочерга ).
+
+Document 5
+Title: Moscow State University
+Content: lomonosov moscow state university ( msu ; russian : московскии государственныи университет имени м. в. ломоносова, often abbreviated мгу ) is a coeducational and public research university located in moscow, russia. it was founded on january 25, 1755 by mikhail lomonosov. msu was renamed after lomonosov in 1940 and was then known as "" lomonosov university "". it also houses the tallest educational building in the world. it is rated among the universities with the best reputation in the world. its current rector is viktor sadovnichiy."
+parameter_validation_001,hotpotqa,parameter_validation_001,2,Black Book starred the actress and writer of what heritage?,256,32,5,0.5,1024,dense,False,20,20,5,5,559,qwen2.5:3b,0.0,0.0,0.5,0.5,0.040743399993516505,0.09063749993219972,0.3903318999800831,0.5217127999057993,779,2,781,Dutch,American,"[""Black Book (novel)"", ""Black Book (film)"", ""Black Book (non-standard disc format)"", ""Lea Thompson"", ""Ghosts of Mississippi""]","[""Black Book (novel)"", ""Black Book (film)"", ""Black Book (non-standard disc format)"", ""Lea Thompson"", ""Ghosts of Mississippi""]","Document 1
+Title: Black Book (novel)
+Content: black book ( dutch : zwartboek ) is a dutch - language 2006 thriller novel by laurens abbink spaink. it is the novelization of the dutch film "" black book "" ( 2006 ). it tells the story of a young jewish woman, rachel stein, and her struggle for survival during and after the second world war. the book has a photo section, and an afterword by paul verhoeven and gerard soeteman.
+
+Document 2
+Title: Black Book (film)
+Content: black book ( dutch : zwartboek ) is a 2006 dutch thriller film co - written and directed by paul verhoeven and starring carice van houten, sebastian koch, thom hoffman, and halina reijn. the film, credited as based on several true events and characters, is about a young jewish woman in the netherlands who becomes a spy for the resistance during world war ii after tragedy befalls her in an encounter with the nazis. the film had its world premiere on 1 september 2006 at the venice film festival and its public release on 14 september 2006 in the netherlands. it is the first film that verhoeven made in the netherlands since "" the fourth man, "" made in 1983 before he moved to the united states.
+
+Document 3
+Title: Black Book (non-standard disc format)
+Content: black book is an unofficial designation of optical disc ( od ) formats that defy official standards for cd, dvd, hd dvd and blu - ray discs. most formats considered black book are formats used for video games or digital rights management.
+
+Document 4
+Title: Lea Thompson
+Content: lea katherine thompson ( born may 31, 1961 ) is an american actress, television director, and television producer. she is known for her role as lorraine baines in the "" back to the future "" trilogy and as the title character in the 1990s nbc sitcom "" caroline in the city "". other films for which she is known include "" all the right moves "" ( 1983 ), "" red dawn "" ( 1984 ), "" howard the duck "" ( 1986 ) "" some kind of wonderful "" ( 1987 ), and "" the beverly hillbillies "" ( 1993 ). from 2011 - 2017, she co - starred as kathryn kennish in the freeform ( formerly abc family ) series "" switched at birth "".
+
+Document 5
+Title: Ghosts of Mississippi
+Content: ghosts of mississippi is a 1996 american biographical courtroom drama film directed by rob reiner and starring alec baldwin, whoopi goldberg, and james woods. the plot is based on the true story of the 1994 trial of byron de la beckwith, the white supremacist accused of the 1963 assassination of civil rights activist medgar evers."
